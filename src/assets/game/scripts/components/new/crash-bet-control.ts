@@ -60,6 +60,12 @@ export default class CrashBetControl extends ObserverComponent {
     @property(Button)
     btnIncreaseBet: Button = null;
 
+    @property(Button)
+    btnHalfBet: Button = null;
+
+    @property(Button)
+    btnDoubleBet: Button = null;
+
     betKey = 0;
 
     private _btnCashOut: Button = null;
@@ -178,6 +184,11 @@ export default class CrashBetControl extends ObserverComponent {
                 this.onClickInputValue(index);
             });
         });
+
+        // Connect half and double bet buttons
+        this.btnHalfBet.node.on(Button.EventType.CLICK, this.onClickHalfBet, this);
+        this.btnDoubleBet.node.on(Button.EventType.CLICK, this.onClickDoubleBet, this);
+
         super.onLoad();
     }
 
@@ -281,11 +292,37 @@ export default class CrashBetControl extends ObserverComponent {
         };
     }
 
+    @handle(BetControlStore, (handler, data: { betKey: number; multiplier: number }) => handler.multiplyBetAmount(data.betKey, data.multiplier))
+    onClickHalfBet() {
+        this.playSFX(AudioIds.CLICK);
+        return {
+            betKey: this.betKey,
+            multiplier: 0.5,
+        };
+    }
+
+    @handle(BetControlStore, (handler, data: { betKey: number; multiplier: number }) => handler.multiplyBetAmount(data.betKey, data.multiplier))
+    onClickDoubleBet() {
+        this.playSFX(AudioIds.CLICK);
+        return {
+            betKey: this.betKey,
+            multiplier: 2,
+        };
+    }
+
     setActiveDownBet(active: boolean) {
         this.btnDecreaseBet.interactable = active;
     }
 
     setActiveUpBet(active: boolean) {
         this.btnIncreaseBet.interactable = active;
+    }
+
+    setActiveHalfBet(active: boolean) {
+        this.btnHalfBet.interactable = active;
+    }
+
+    setActiveDoubleBet(active: boolean) {
+        this.btnDoubleBet.interactable = active;
     }
 }

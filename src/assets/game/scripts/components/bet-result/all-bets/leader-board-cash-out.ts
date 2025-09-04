@@ -26,11 +26,7 @@ export class LeaderBoardCashOut extends Component {
     @property(Label)
     lblBetAmount: Label = null;
 
-    @property(Node)
-    nodeBackground: Node = null;
-
-    setData(data: ILeaderBoardCashOutData, index: number) {
-        this.nodeBackground.active = index % 2 > 0;
+    setData(data: ILeaderBoardCashOutData) {
         const { name, multiplier, win, amount } = data;
         this.lblName.string = CrashUtils.encryptedName(name);
         this.lblBetAmount.string = FormatUtils.numberWithCommas(amount, 2);

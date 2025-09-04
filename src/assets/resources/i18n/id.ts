@@ -223,7 +223,39 @@ export const languages = {
         "under_maintenance_time": "Mulai dari %{startTime} hingga %{endTime} (GMT+8)",
         "win": "Menang",
         "win_loss": "Menang Kalah",
-        "you_reach_max_win": "Anda mencapai Maksimal Menang"
+        "you_reach_max_win": "Anda mencapai Maksimal Menang",
+        "invalid_payline": "invalid_payline",
+        "invalid_bonus": "invalid_bonus",
+        "opened_bonus": "opened_bonus",
+        "invalid_jackpot": "invalid_jackpot",
+        "opened_jackpot": "opened_jackpot",
+        "no_data": "Data tidak tersedia.",
+        "all": null,
+        "message_loading": "Memuat",
+        "message_error_claim_expired": "Bonus berakhir. Tidak lagi tersedia. (%{errorCode})",
+        "player": "Player",
+        "bet_amount": "JUMLAH TARUHAN",
+        "bet_detail_note": "Data hanya tersedia untuk 7 hari terakhir terhitung dari tanggal saat ini.",
+        "players": null,
+        "original_tagline": null,
+        "auto_cashout": "CASHOUT OTOMATIS",
+        "auto_play": "AUTO-PLAY",
+        "bet_accepted": "Taruhan Diterima",
+        "chip_value": null,
+        "total_bet": "Total Taruhan",
+        "waiting_for_the_next_round": null,
+        "show_more": null,
+        "show_less": null,
+        "start_in": null,
+        "cancel_bet": "(Batalkan Taruhan)",
+        "cashed": "Dicairkan",
+        "cashout": "Cashout",
+        "message_bet_is_accepted": "Taruhan diterima",
+        "message_total_cashout_reach_max": "Total jumlah pembayaran Raih kemenangan maksimal",
+        "my_bets": "Taruhan Saya",
+        "waiting": "MENUNGGU...",
+        "bet_slip": "Slip Taruhan",
+        "game": "game"
     },
     "Spaceflight": {
         "auto_cashout": "CASHOUT OTOMATIS",
@@ -256,7 +288,8 @@ export const languages = {
         "stop_auto_play": "STOP AUTO-PLAY",
         "total_cashout_amount_reach_max": "Total jumlah pembayaran Raih kemenangan maksimal",
         "waiting": "MENUNGGU...",
-        "you_reach_max_win": "Anda mencapai Maksimal Menang"
+        "you_reach_max_win": "Anda mencapai Maksimal Menang",
+        "cashed_out": "DITARIK"
     },
     "RocketX": {
         "all_bets": "Semua Taruhan",
@@ -288,6 +321,10 @@ export const languages = {
         "top": "Teratas",
         "waiting": "MENUNGGU...",
         "year": "Tahun"
+    },
+    "Crash X": {
+        "game_name": "Crash X",
+        "game_icon_name": "Crash X"
     }
 };
 

@@ -139,7 +139,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 215.63987731933594,
+      "width": 225.703125,
       "height": 50.4
     },
     "_anchorPoint": {
@@ -207,7 +207,7 @@
     "_overflow": 0,
     "_enableWrapText": true,
     "_font": {
-      "__uuid__": "2322018b-0afa-475e-a33a-166fadf10be0",
+      "__uuid__": "e6035f60-eed4-4bb0-ba7f-7c1d1af34885",
       "__expectedType__": "cc.TTFFont"
     },
     "_isSystemFontUsed": false,

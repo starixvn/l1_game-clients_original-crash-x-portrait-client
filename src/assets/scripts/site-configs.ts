@@ -21,11 +21,11 @@ const defaultConfig: gc.Configs.SiteConfigs = {
     enableMsgpackParserAllGames: false,
     enableMsgpackParserOnNotification: false,
     websocket: {
-        proxyPath: "rocketx",
-        route: "rocketx",
+        proxyPath: "crashx",
+        route: "crashx",
     },
     tolgeeUrl: "",
-    storagePrefixKey: "RocketX",
+    storagePrefixKey: "CrashX",
 };
 
 let configDev = {

@@ -91,6 +91,7 @@ export class MyBetTableBody extends ObserverComponent {
     private renderData(myBetModel: MyBetModel): void {
         myBetModel.betLogs.forEach((betLogItem, rowIndex) => {
             this.processBetLogDetails(betLogItem, rowIndex);
+            console.log("betLogItem", betLogItem, rowIndex);
         });
 
         this.updateUIAfterRender(myBetModel);

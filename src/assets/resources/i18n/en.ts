@@ -226,7 +226,36 @@ export const languages = {
         "under_maintenance_time": "Starting from %{startTime} to %{endTime} (GMT+8)",
         "win": "Win",
         "win_loss": "Win Loss",
-        "you_reach_max_win": "You reached the max win"
+        "you_reach_max_win": "You reached the max win",
+        "invalid_payline": "invalid_payline",
+        "invalid_bonus": "invalid_bonus",
+        "opened_bonus": "opened_bonus",
+        "invalid_jackpot": "invalid_jackpot",
+        "opened_jackpot": "opened_jackpot",
+        "message_error_claim_expired": "The Bonus is expired. No longer available. (%{errorCode}) ",
+        "player": "Player",
+        "bet_amount": "Bet Amount",
+        "bet_detail_note": "Data are only available within the last 7 days from the current date.",
+        "players": "Players",
+        "original_tagline": "Play Fresh, Win Best",
+        "auto_cashout": "Auto Cashout",
+        "auto_play": "Auto Play",
+        "bet_accepted": "Bet Accepted",
+        "chip_value": "Chip Value",
+        "total_bet": "Total Bet",
+        "waiting_for_the_next_round": "Waiting for the next round",
+        "show_more": "Show More",
+        "show_less": "Show Less",
+        "start_in": "Start in {time}",
+        "cancel_bet": "(Cancel Bet)",
+        "cashed": "Cashed",
+        "cashout": "Cashout",
+        "message_bet_is_accepted": "Bet is accepted",
+        "message_total_cashout_reach_max": "Total cashout amounts reach the max win",
+        "my_bets": "My Bets",
+        "waiting": "Waiting...",
+        "bet_slip": "Bet Slip",
+        "game": "Game"
     },
     "Spaceflight": {
         "auto_cashout": "AUTO CASHOUT",
@@ -292,6 +321,10 @@ export const languages = {
         "top": "Top",
         "waiting": "Waiting...",
         "year": "Year"
+    },
+    "Crash X": {
+        "game_name": "Crash X",
+        "game_icon_name": "Crash X"
     }
 };
 

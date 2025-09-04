@@ -62,6 +62,26 @@ export default class CrashBetControlContainer extends ObserverComponent {
         this.controls[1].setActiveUpBet(active);
     }
 
+    @render(BetControlStore, (store) => store.activeHalfBet(0))
+    renderActiveHalfBet0(active: boolean) {
+        this.controls[0].setActiveHalfBet(active);
+    }
+
+    @render(BetControlStore, (store) => store.activeHalfBet(1))
+    renderActiveHalfBet1(active: boolean) {
+        this.controls[1].setActiveHalfBet(active);
+    }
+
+    @render(BetControlStore, (store) => store.activeDoubleBet(0))
+    renderActiveDoubleBet0(active: boolean) {
+        this.controls[0].setActiveDoubleBet(active);
+    }
+
+    @render(BetControlStore, (store) => store.activeDoubleBet(1))
+    renderActiveDoubleBet1(active: boolean) {
+        this.controls[1].setActiveDoubleBet(active);
+    }
+
     @render(BetControlStore, (store) => store.getBetSetting(0))
     renderBetSettingFirst(setting: IBetControlSettings) {
         this.controls[0].renderSetting(setting);

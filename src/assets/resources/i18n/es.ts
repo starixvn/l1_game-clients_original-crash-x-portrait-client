@@ -33,7 +33,7 @@ export const languages = {
         "create_nick_name": "Crea tu Apodo",
         "details": "Detalles",
         "enter_your_name": "Ingresa tu apodo.",
-        "even_win": "Ganancias a la Par",
+        "even_win": "Par Gana",
         "from": "desde",
         "game_category_new_releases": "Novedades",
         "game_category_ph_1": "Todos",
@@ -214,8 +214,8 @@ export const languages = {
         "stake": "Apuesta",
         "submit": "ENVIAR",
         "terms_and_conditions_content": "- Todos los jugadores nuevos y existentes son elegibles para participar en las promociones y optar por premios mayores.\n- El monto ganador se abonará según las reglas y pagos de la promoción.\n- La Promoción estará vigente por un período determinado establecido por la Compañía. Al finalizar la promoción, las cuotas de apuestas se restablecerán a sus valores previos.\n- La Compañía se reserva el derecho de modificar cualquiera de los términos de participación aplicables a esta promoción, así como de modificar, finalizar, suspender o reprogramar esta promoción en cualquier momento.\n- Cualquier controversia que surja de o en relación con esta promoción será resuelta por la Compañía.",
-        "text_big_wins": "Big Wins!",
-        "text_small_win": "¡Pequeños Premios!",
+        "text_big_wins": "Gana la Grande!",
+        "text_small_win": "Gana la Pequeño!",
         "time": "Tiempo",
         "to": "para",
         "total": "Total",
@@ -226,7 +226,36 @@ export const languages = {
         "under_maintenance_time": "A partir de %{startTime} hasta %{endTime} (GMT+8)",
         "win": "Ganar",
         "win_loss": "Ganancia/Pérdida",
-        "you_reach_max_win": "Has alcanzado la ganancia máxima."
+        "you_reach_max_win": "Has alcanzado la ganancia máxima.",
+        "invalid_payline": "invalid_payline",
+        "invalid_bonus": "invalid_bonus",
+        "opened_bonus": "opened_bonus",
+        "invalid_jackpot": "invalid_jackpot",
+        "opened_jackpot": "opened_jackpot",
+        "message_error_claim_expired": "La Bonificación ha expirado. Ya no está disponible. (%{errorCode})",
+        "player": "Jugador",
+        "bet_amount": "Monto de Apuesta",
+        "bet_detail_note": "Los datos solo están disponibles para los últimos 7 días a partir de la fecha actual.",
+        "players": null,
+        "original_tagline": null,
+        "auto_cashout": "Auto Retiro",
+        "auto_play": "Juego Automático",
+        "bet_accepted": "Apuesta Aceptada",
+        "chip_value": null,
+        "total_bet": "Apuesta Total",
+        "waiting_for_the_next_round": null,
+        "show_more": null,
+        "show_less": null,
+        "start_in": "Comienza en {time}",
+        "cancel_bet": "(Cancelar Apuesta)",
+        "cashed": "Retirado",
+        "cashout": "Retirar",
+        "message_bet_is_accepted": "Apuesta aceptada",
+        "message_total_cashout_reach_max": "Los importes totales de los cobros alcanzan el máximo de ganancias",
+        "my_bets": "Mis apuestas",
+        "waiting": "Esperando...",
+        "bet_slip": "Boleto de Apuestas",
+        "game": "juego"
     },
     "Spaceflight": {
         "auto_cashout": "Auto Retiro",
@@ -292,6 +321,10 @@ export const languages = {
         "top": "Mejores",
         "waiting": "Esperando...",
         "year": "Año"
+    },
+    "Crash X": {
+        "game_name": "Crash X",
+        "game_icon_name": "Crash X"
     }
 };
 

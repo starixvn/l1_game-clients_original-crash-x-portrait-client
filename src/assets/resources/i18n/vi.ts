@@ -223,7 +223,39 @@ export const languages = {
         "under_maintenance_time": "Thời gian bảo trì từ %{startTime} đến %{endTime} (GMT+8).",
         "win": "Thắng",
         "win_loss": "Thắng Thua",
-        "you_reach_max_win": "Bạn Đã Đạt Mức Tiền Thắng Tối Đa"
+        "you_reach_max_win": "Bạn Đã Đạt Mức Tiền Thắng Tối Đa",
+        "invalid_payline": "invalid_payline",
+        "invalid_bonus": "invalid_bonus",
+        "opened_bonus": "opened_bonus",
+        "invalid_jackpot": "invalid_jackpot",
+        "opened_jackpot": "opened_jackpot",
+        "no_data": "Không có dữ liệu.",
+        "all": null,
+        "message_loading": "Đang tải",
+        "message_error_claim_expired": "Thời gian nhận thưởng đã hết. (%{errorCode}) ",
+        "player": "Người Chơi",
+        "bet_amount": "Tiền Cược",
+        "bet_detail_note": "Dữ liệu chỉ khả dụng trong 7 ngày gần nhất tính từ ngày hiện tại.",
+        "players": "Người Chơi",
+        "original_tagline": null,
+        "auto_cashout": "TỰ ĐỘNG RÚT TIỀN",
+        "auto_play": "CHƠI TỰ ĐỘNG",
+        "bet_accepted": "Đã Nhận Cược",
+        "chip_value": "Giá trị chip",
+        "total_bet": "Tổng Cược",
+        "waiting_for_the_next_round": null,
+        "show_more": null,
+        "show_less": null,
+        "start_in": "Bắt đầu sau",
+        "cancel_bet": "(Hủy Cược)",
+        "cashed": "Rút Tiền",
+        "cashout": "Rút Tiền",
+        "message_bet_is_accepted": "Đã xác nhận cược",
+        "message_total_cashout_reach_max": "Tổng tiền đã rút đạt mức tối đa",
+        "my_bets": "Cược Của Tôi",
+        "waiting": "ĐANG CHỜ...",
+        "bet_slip": "Phiếu Cược",
+        "game": "Trò Chơi"
     },
     "Spaceflight": {
         "auto_cashout": "TỰ ĐỘNG RÚT TIỀN",
@@ -289,6 +321,10 @@ export const languages = {
         "top": "Top",
         "waiting": "ĐANG CHỜ...",
         "year": "Năm"
+    },
+    "Crash X": {
+        "game_name": "Crash X",
+        "game_icon_name": "Crash X"
     }
 };
 

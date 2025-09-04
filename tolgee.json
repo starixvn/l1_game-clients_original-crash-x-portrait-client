@@ -1,0 +1,4 @@
+{
+    "mainNamespace": "Crash X",
+    "additionalNamespaces": ["Common", "Spaceflight", "RocketX"]
+}

@@ -39,9 +39,6 @@ export default class BetHistoryRocketXTableBodyRow extends ObserverComponent {
     @property(Label)
     lblRefund: Label = null;
 
-    @property(Node)
-    nodeBackground: Node = null;
-
     @property(Label)
     lblResult: Label = null;
 
@@ -53,7 +50,6 @@ export default class BetHistoryRocketXTableBodyRow extends ObserverComponent {
     setData(data: BetResultHistoryBodyItemType) {
         const { betHistoryLog, index, betKey } = data;
         this.betHistoryLog = betHistoryLog;
-        this.nodeBackground.active = index % 2 > 0;
 
         const betTime = this.getBetTime(betHistoryLog, betKey);
         this.setLabels(betTime, betHistoryLog, betKey);
@@ -64,8 +60,8 @@ export default class BetHistoryRocketXTableBodyRow extends ObserverComponent {
     }
 
     private setLabels(betTime: string, betHistoryLog: gc.BetHistory.BetHistoryLog, betKey: number) {
-        if (this.lblDate) this.lblDate.string = DateTimeUtils.getStringDate(betTime);
-        if (this.lblTime) this.lblTime.string = DateTimeUtils.getStringHourByTime(betTime);
+        if (this.lblDate) this.lblDate.string = CrashUtils.formatDate(betTime);
+        if (this.lblTime) this.lblTime.string = CrashUtils.formatTime(betTime);
         this.lblRound.string = betHistoryLog.roundId.toString();
 
         const betAmount = this.getBetAmount(betHistoryLog, betKey);
@@ -97,10 +93,10 @@ export default class BetHistoryRocketXTableBodyRow extends ObserverComponent {
         }
 
         const multiplier = Number(multiplierRow.multiplier);
-        const multiplierText = multiplier !== 0 
+        const multiplierText = multiplier !== 0
             ? `${FormatUtils.numberWithCommas(multiplier, 2, false)}x`
             : defaultMultiplierText;
-            
+
         this.lblMultiplier.string = multiplierText;
     }
 
