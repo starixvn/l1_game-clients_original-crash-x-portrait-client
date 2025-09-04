@@ -47,7 +47,7 @@ export class RocketFly extends ObserverComponent {
         this.multiplierIndex = index;
 
         const current = this.spineRocket.getCurrent(0).animation.name;
-        const animName = `bay-lv${this.multiplierIndex + 1}`;
+        const animName = `lv${this.multiplierIndex + 1}`;
         if (current !== animName) {
             AnimationUtils.playSpine(this.spineRocket, animName, true);
         }
@@ -140,7 +140,7 @@ export class RocketFly extends ObserverComponent {
     explodeRocket() {
         this.playSFX(AudioIds.FLEW_AWAY);
 
-        const animName = `crash${this.multiplierIndex + 1}`;
+        const animName = `explode`;
         AnimationUtils.playSpine(this.spineRocket, animName, false);
 
         this.crashed = true;

@@ -13,9 +13,9 @@ import { GameCrashUserSettingHandlerV2 } from "./handlers/override/crash-game-us
 import { PlayerActionHandlers } from "./handlers/override/player-action-handlers";
 
 export const settings = {
-    id: 113,
-    name: "RocketX",
-    namespaces: ["RocketX", "Spaceflight"],
+    id: 144,
+    name: "CrashX",
+    namespaces: ["Crash X","RocketX", "Spaceflight"],
     durations: {
         wholeRound: 14,
         lockingBet: 3,
