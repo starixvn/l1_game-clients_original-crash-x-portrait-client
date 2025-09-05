@@ -90,8 +90,8 @@ export class MyBetTableBody extends ObserverComponent {
 
     private renderData(myBetModel: MyBetModel): void {
         myBetModel.betLogs.forEach((betLogItem, rowIndex) => {
-            this.processBetLogDetails(betLogItem, rowIndex);
-            console.log("betLogItem", betLogItem, rowIndex);
+           // this.processBetLogDetails(betLogItem, rowIndex);
+           this.processBetHistory(betLogItem, rowIndex);
         });
 
         this.updateUIAfterRender(myBetModel);
@@ -103,6 +103,17 @@ export class MyBetTableBody extends ObserverComponent {
                 this.createAndPositionBetItem(betLogItem, rowIndex, betLogDetail);
             }
         });
+    }
+
+    private processBetHistory(betHistoryLog: gc.BetHistory.BetHistoryLog, rowIndex: number): void {
+        console.log("betHistoryLog", betHistoryLog.betwin, betHistoryLog.roundId);
+        const item = this.buildBodyRow(this.itemPrefab, betHistoryLog, rowIndex, Number(betHistoryLog.betwin));
+        this.content.addChild(item);
+        const currentPosition = item.getPosition();
+        const y = this.startYPosition - this.currentIndex * this.itemHeight;
+
+        item.setPosition(currentPosition.x, y);
+        this.currentIndex++;
     }
 
     private createAndPositionBetItem(betLogItem: any, rowIndex: number, betLogDetail: any): void {

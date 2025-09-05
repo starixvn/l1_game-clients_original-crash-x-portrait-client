@@ -37,34 +37,34 @@
         "__id__": 80
       },
       {
-        "__id__": 95
+        "__id__": 96
       },
       {
-        "__id__": 105
+        "__id__": 106
       },
       {
-        "__id__": 117
+        "__id__": 118
       },
       {
-        "__id__": 131
+        "__id__": 132
       }
     ],
     "_active": true,
     "_components": [
       {
-        "__id__": 143
+        "__id__": 144
       },
       {
-        "__id__": 145
+        "__id__": 146
       }
     ],
     "_prefab": {
-      "__id__": 147
+      "__id__": 148
     },
     "_lpos": {
       "__type__": "cc.Vec3",
       "x": 0,
-      "y": 672,
+      "y": 852,
       "z": 0
     },
     "_lrot": {
@@ -119,7 +119,7 @@
     },
     "_lpos": {
       "__type__": "cc.Vec3",
-      "x": 5.684341886080802e-14,
+      "x": 0,
       "y": 0,
       "z": 0
     },
@@ -160,8 +160,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 828.0000000000001,
-      "height": 1344
+      "width": 786.0000000000002,
+      "height": 1704.0000000000002
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -1347,6 +1347,9 @@
       },
       {
         "__id__": 93
+      },
+      {
+        "__id__": 95
       }
     ],
     "removedComponents": []
@@ -1492,20 +1495,33 @@
     ]
   },
   {
+    "__type__": "CCPropertyOverrideInfo",
+    "targetInfo": {
+      "__id__": 89
+    },
+    "propertyPath": [
+      "prefab"
+    ],
+    "value": {
+      "__uuid__": "5a8a7ca7-cf75-4c0f-af26-b3baf11c6c09",
+      "__expectedType__": "cc.Prefab"
+    }
+  },
+  {
     "__type__": "cc.Node",
     "_objFlags": 0,
     "_parent": {
       "__id__": 1
     },
     "_prefab": {
-      "__id__": 96
+      "__id__": 97
     },
     "__editorExtras__": {}
   },
   {
     "__type__": "cc.PrefabInfo",
     "root": {
-      "__id__": 95
+      "__id__": 96
     },
     "asset": {
       "__uuid__": "8f77bb26-8517-4cb3-b34f-f13c74a410ae",
@@ -1513,7 +1529,7 @@
     },
     "fileId": "92iSiXPmdOtIPsjtUUD1Hg",
     "instance": {
-      "__id__": 97
+      "__id__": 98
     },
     "targetOverrides": null
   },
@@ -1527,10 +1543,7 @@
     "mountedComponents": [],
     "propertyOverrides": [
       {
-        "__id__": 98
-      },
-      {
-        "__id__": 100
+        "__id__": 99
       },
       {
         "__id__": 101
@@ -1540,6 +1553,9 @@
       },
       {
         "__id__": 103
+      },
+      {
+        "__id__": 104
       }
     ],
     "removedComponents": []
@@ -1547,7 +1563,7 @@
   {
     "__type__": "CCPropertyOverrideInfo",
     "targetInfo": {
-      "__id__": 99
+      "__id__": 100
     },
     "propertyPath": [
       "_name"
@@ -1563,7 +1579,7 @@
   {
     "__type__": "CCPropertyOverrideInfo",
     "targetInfo": {
-      "__id__": 99
+      "__id__": 100
     },
     "propertyPath": [
       "_lpos"
@@ -1578,7 +1594,7 @@
   {
     "__type__": "CCPropertyOverrideInfo",
     "targetInfo": {
-      "__id__": 99
+      "__id__": 100
     },
     "propertyPath": [
       "_lrot"
@@ -1594,7 +1610,7 @@
   {
     "__type__": "CCPropertyOverrideInfo",
     "targetInfo": {
-      "__id__": 99
+      "__id__": 100
     },
     "propertyPath": [
       "_euler"
@@ -1609,7 +1625,7 @@
   {
     "__type__": "CCPropertyOverrideInfo",
     "targetInfo": {
-      "__id__": 104
+      "__id__": 105
     },
     "propertyPath": [
       "_contentSize"
@@ -1633,14 +1649,14 @@
       "__id__": 1
     },
     "_prefab": {
-      "__id__": 106
+      "__id__": 107
     },
     "__editorExtras__": {}
   },
   {
     "__type__": "cc.PrefabInfo",
     "root": {
-      "__id__": 105
+      "__id__": 106
     },
     "asset": {
       "__uuid__": "d16c2574-0fad-4f7b-ab53-892625b3ee06",
@@ -1648,7 +1664,7 @@
     },
     "fileId": "bd9EXmfo1B2KMHGzaHZezu",
     "instance": {
-      "__id__": 107
+      "__id__": 108
     },
     "targetOverrides": []
   },
@@ -1662,10 +1678,7 @@
     "mountedComponents": [],
     "propertyOverrides": [
       {
-        "__id__": 108
-      },
-      {
-        "__id__": 110
+        "__id__": 109
       },
       {
         "__id__": 111
@@ -1677,7 +1690,10 @@
         "__id__": 113
       },
       {
-        "__id__": 115
+        "__id__": 114
+      },
+      {
+        "__id__": 116
       }
     ],
     "removedComponents": []
@@ -1685,7 +1701,7 @@
   {
     "__type__": "CCPropertyOverrideInfo",
     "targetInfo": {
-      "__id__": 109
+      "__id__": 110
     },
     "propertyPath": [
       "_name"
@@ -1701,7 +1717,7 @@
   {
     "__type__": "CCPropertyOverrideInfo",
     "targetInfo": {
-      "__id__": 109
+      "__id__": 110
     },
     "propertyPath": [
       "_lpos"
@@ -1716,7 +1732,7 @@
   {
     "__type__": "CCPropertyOverrideInfo",
     "targetInfo": {
-      "__id__": 109
+      "__id__": 110
     },
     "propertyPath": [
       "_lrot"
@@ -1732,7 +1748,7 @@
   {
     "__type__": "CCPropertyOverrideInfo",
     "targetInfo": {
-      "__id__": 109
+      "__id__": 110
     },
     "propertyPath": [
       "_euler"
@@ -1747,7 +1763,7 @@
   {
     "__type__": "CCPropertyOverrideInfo",
     "targetInfo": {
-      "__id__": 114
+      "__id__": 115
     },
     "propertyPath": [
       "_contentSize"
@@ -1767,7 +1783,7 @@
   {
     "__type__": "CCPropertyOverrideInfo",
     "targetInfo": {
-      "__id__": 116
+      "__id__": 117
     },
     "propertyPath": [
       "_contentSize"
@@ -1791,14 +1807,14 @@
       "__id__": 1
     },
     "_prefab": {
-      "__id__": 118
+      "__id__": 119
     },
     "__editorExtras__": {}
   },
   {
     "__type__": "cc.PrefabInfo",
     "root": {
-      "__id__": 117
+      "__id__": 118
     },
     "asset": {
       "__uuid__": "4658f2ca-3427-47be-b6ac-4cacebcb4191",
@@ -1806,7 +1822,7 @@
     },
     "fileId": "c9V/iuAkpFAK2kIjI7FH/z",
     "instance": {
-      "__id__": 119
+      "__id__": 120
     },
     "targetOverrides": null
   },
@@ -1819,15 +1835,12 @@
     "mountedChildren": [],
     "mountedComponents": [
       {
-        "__id__": 120
+        "__id__": 121
       }
     ],
     "propertyOverrides": [
       {
-        "__id__": 124
-      },
-      {
-        "__id__": 126
+        "__id__": 125
       },
       {
         "__id__": 127
@@ -1837,6 +1850,9 @@
       },
       {
         "__id__": 129
+      },
+      {
+        "__id__": 130
       }
     ],
     "removedComponents": []
@@ -1844,11 +1860,11 @@
   {
     "__type__": "cc.MountedComponentsInfo",
     "targetInfo": {
-      "__id__": 121
+      "__id__": 122
     },
     "components": [
       {
-        "__id__": 122
+        "__id__": 123
       }
     ]
   },
@@ -1864,15 +1880,15 @@
     "_objFlags": 0,
     "__editorExtras__": {
       "mountedRoot": {
-        "__id__": 117
+        "__id__": 118
       }
     },
     "node": {
-      "__id__": 117
+      "__id__": 118
     },
     "_enabled": true,
     "__prefab": {
-      "__id__": 123
+      "__id__": 124
     },
     "_alignFlags": 45,
     "_target": null,
@@ -1901,7 +1917,7 @@
   {
     "__type__": "CCPropertyOverrideInfo",
     "targetInfo": {
-      "__id__": 125
+      "__id__": 126
     },
     "propertyPath": [
       "_name"
@@ -1917,7 +1933,7 @@
   {
     "__type__": "CCPropertyOverrideInfo",
     "targetInfo": {
-      "__id__": 125
+      "__id__": 126
     },
     "propertyPath": [
       "_lpos"
@@ -1932,7 +1948,7 @@
   {
     "__type__": "CCPropertyOverrideInfo",
     "targetInfo": {
-      "__id__": 125
+      "__id__": 126
     },
     "propertyPath": [
       "_lrot"
@@ -1948,7 +1964,7 @@
   {
     "__type__": "CCPropertyOverrideInfo",
     "targetInfo": {
-      "__id__": 125
+      "__id__": 126
     },
     "propertyPath": [
       "_euler"
@@ -1963,7 +1979,7 @@
   {
     "__type__": "CCPropertyOverrideInfo",
     "targetInfo": {
-      "__id__": 130
+      "__id__": 131
     },
     "propertyPath": [
       "_contentSize"
@@ -1987,14 +2003,14 @@
       "__id__": 1
     },
     "_prefab": {
-      "__id__": 132
+      "__id__": 133
     },
     "__editorExtras__": {}
   },
   {
     "__type__": "cc.PrefabInfo",
     "root": {
-      "__id__": 131
+      "__id__": 132
     },
     "asset": {
       "__uuid__": "cde89c68-2bb6-4df7-8c25-ed3979655464",
@@ -2002,7 +2018,7 @@
     },
     "fileId": "3eksY3MHZKu7IcGVpjZKqR",
     "instance": {
-      "__id__": 133
+      "__id__": 134
     },
     "targetOverrides": null
   },
@@ -2016,10 +2032,7 @@
     "mountedComponents": [],
     "propertyOverrides": [
       {
-        "__id__": 134
-      },
-      {
-        "__id__": 136
+        "__id__": 135
       },
       {
         "__id__": 137
@@ -2031,7 +2044,10 @@
         "__id__": 139
       },
       {
-        "__id__": 141
+        "__id__": 140
+      },
+      {
+        "__id__": 142
       }
     ],
     "removedComponents": []
@@ -2039,7 +2055,7 @@
   {
     "__type__": "CCPropertyOverrideInfo",
     "targetInfo": {
-      "__id__": 135
+      "__id__": 136
     },
     "propertyPath": [
       "_name"
@@ -2055,7 +2071,7 @@
   {
     "__type__": "CCPropertyOverrideInfo",
     "targetInfo": {
-      "__id__": 135
+      "__id__": 136
     },
     "propertyPath": [
       "_lpos"
@@ -2070,7 +2086,7 @@
   {
     "__type__": "CCPropertyOverrideInfo",
     "targetInfo": {
-      "__id__": 135
+      "__id__": 136
     },
     "propertyPath": [
       "_lrot"
@@ -2086,7 +2102,7 @@
   {
     "__type__": "CCPropertyOverrideInfo",
     "targetInfo": {
-      "__id__": 135
+      "__id__": 136
     },
     "propertyPath": [
       "_euler"
@@ -2101,7 +2117,7 @@
   {
     "__type__": "CCPropertyOverrideInfo",
     "targetInfo": {
-      "__id__": 140
+      "__id__": 141
     },
     "propertyPath": [
       "_contentSize"
@@ -2121,7 +2137,7 @@
   {
     "__type__": "CCPropertyOverrideInfo",
     "targetInfo": {
-      "__id__": 142
+      "__id__": 143
     },
     "propertyPath": [
       "_lpos"
@@ -2149,12 +2165,12 @@
     },
     "_enabled": true,
     "__prefab": {
-      "__id__": 144
+      "__id__": 145
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 828.0000000000001,
-      "height": 1344
+      "width": 786.0000000000002,
+      "height": 1704.0000000000002
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -2177,7 +2193,7 @@
     },
     "_enabled": true,
     "__prefab": {
-      "__id__": 146
+      "__id__": 147
     },
     "_alignFlags": 45,
     "_target": null,
@@ -2216,16 +2232,16 @@
     "targetOverrides": null,
     "nestedPrefabInstanceRoots": [
       {
-        "__id__": 131
+        "__id__": 132
       },
       {
-        "__id__": 117
+        "__id__": 118
       },
       {
-        "__id__": 105
+        "__id__": 106
       },
       {
-        "__id__": 95
+        "__id__": 96
       },
       {
         "__id__": 80

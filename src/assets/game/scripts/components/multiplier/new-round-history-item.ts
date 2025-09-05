@@ -24,7 +24,6 @@ export default class NewRoundHistoryItem extends RoundHistoryItem {
         const index = CrashUtils.getMultiplierIndex(multiplier);
         const colorName = CrashUtils.getMultiplierColorName(index);
 
-        // this.nodeMultiplier.spriteFrame = this.mainAtlas.getSpriteFrame(`${this.prefixFrameBg}-${colorName}`);
         this.nodeCircle.spriteFrame = this.mainAtlas.getSpriteFrame(`${this.prefixFrameBg}-${colorName}`);
         if (this.changeMultiplierLabelColor) {
             this.lblMultiplier.color = CrashUtils.getMultiplierColorByIndex(index);
