@@ -14,12 +14,12 @@ export class TopWinHandlers {
     @inject(gc.RoundPF.RoundPFHandler) protected readonly roundPFHandler: gc.RoundPF.RoundPFHandler;
     @inject(gc.RoundPF.RoundPFStore) protected readonly roundPFStore: gc.RoundPF.RoundPFStore;
     @inject(gc.Player.MainPlayerStore) protected readonly mainPlayerStore: gc.Player.MainPlayerStore;
-    
+
     async getTopWinByType(type: number) {
         let topWinItems: TopWinItem[] = [];
         if(type === PeriodType.Monthly) {
             topWinItems = await this.topResultClient.getTopWinMonthly();
-            
+
         } else if(type === PeriodType.Yearly) {
             topWinItems = await this.topResultClient.getTopWinYearly();
         }
@@ -41,7 +41,7 @@ export class TopWinHandlers {
 
     getRoundPF(roundId: number) {
         const topWinItem = this.topWinStore.getTopWinItemByRoundId(roundId);
-        
+
         var roundPfResult: gc.GameServiceMessage.RoundPFResult = {
             roundId: topWinItem.provablyFair?.roundId,
             serverSeedHash: topWinItem.provablyFair?.serverSeedHash,
@@ -60,10 +60,8 @@ export class TopWinHandlers {
     }
 
     convertValueByCurrency(topWinItem: TopWinItem) {
-        this.mainPlayerStore.rate;
-        let rate = topWinItem.rate; 
+        const rate = topWinItem.rate;
         topWinItem.betAmount = gc.NumberUtils.getValueByCurrency(topWinItem.betAmount, this.mainPlayerStore.rate, rate);
         topWinItem.winAmount = gc.NumberUtils.getValueByCurrency(topWinItem.winAmount, this.mainPlayerStore.rate, rate);
     }
-
 }

@@ -74,7 +74,7 @@ export class CrashBetListHandlers implements IMultipleHandlers {
             const player = data[key];
 
             Object.keys(player).forEach((betkey) => {
-                let bet = player[betkey];
+                const bet = player[betkey];
                 this.generateLeaderBoardPlayer(players, bet);
             });
         });
@@ -167,7 +167,7 @@ export class CrashBetListHandlers implements IMultipleHandlers {
 
     handleResponseByBetKey(betResponseData: ICrashBetResponse) {
         if (betResponseData.endBet > 0) {
-            let betData = new MainPlayerBetData();
+            const betData = new MainPlayerBetData();
             betData.name = this.mainPlayerStore.name;
             betData.betKey = betResponseData.betKey;
             betData.amount = betResponseData.endBet;
@@ -178,7 +178,7 @@ export class CrashBetListHandlers implements IMultipleHandlers {
     handleOwnBets(ownBets: CrashOwnBets) {
         Object.keys(ownBets).forEach((betKey) => {
             const data = ownBets[betKey] as gc.GameCrash.GameCrashServiceMessage.CrashOwnBets;
-            let betData = new MainPlayerBetData();
+            const betData = new MainPlayerBetData();
             betData.name = this.mainPlayerStore.name;
             betData.betKey = Number(betKey);
             betData.amount = data.amount;

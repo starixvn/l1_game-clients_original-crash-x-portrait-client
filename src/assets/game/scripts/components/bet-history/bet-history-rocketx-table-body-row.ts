@@ -59,10 +59,9 @@ export default class BetHistoryRocketXTableBodyRow extends ObserverComponent {
     betHistoryLog: gc.BetHistory.BetHistoryLog = null;
 
     setData(data: BetResultHistoryBodyItemType) {
-        const { betHistoryLog, index, betKey } = data;
+        const { betHistoryLog, index} = data;
         this.betHistoryLog = betHistoryLog;
         this.nodeBackground.active = index % 2 > 0;
-        //const betTime = this.getBetTime(betHistoryLog, betKey);
         this.setLabels(betHistoryLog);
     }
 
@@ -71,24 +70,16 @@ export default class BetHistoryRocketXTableBodyRow extends ObserverComponent {
     }
 
     private setLabels(betHistoryLog: gc.BetHistory.BetHistoryLog) {
-        if (this.lblDate) this.lblDate.string = CrashUtils.formatDate(betHistoryLog.time);
-        if (this.lblTime) this.lblTime.string = CrashUtils.formatTime(betHistoryLog.time);
+        this.lblDate.string = CrashUtils.formatDate(betHistoryLog.time);
+        this.lblTime.string = CrashUtils.formatTime(betHistoryLog.time);
         this.lblRound.string = betHistoryLog.roundId.toString();
-        // Get total amount from all betLogDetails
+
         const totalAmount = this.getTotalAmountFromBetLogDetails(betHistoryLog);
-        if (this.lblTotalStake) this.lblTotalStake.string = FormatUtils.numberWithCommas(totalAmount, 2);
+        this.lblTotalStake.string = FormatUtils.numberWithCommas(totalAmount, 2);
         this.lblWin.string = FormatUtils.numberWithCommas(betHistoryLog.betwin, 2);
         if (betHistoryLog.betwin > 0) {
             this.lblWin.color = new Color().fromHEX("FFF600");
         }
-
-
-
-        //const betAmount = this.getBetAmount(betHistoryLog, betKey);
-        //if (this.lblTotalStake) this.lblTotalStake.string = FormatUtils.numberWithCommas(betAmount, 2);
-
-        //this.bindMultiplier(betHistoryLog, betKey);
-        //this.bindWin(betHistoryLog, betKey);
     }
 
     private getBetAmount(betHistoryLog: gc.BetHistory.BetHistoryLog, betKey: number): number {
@@ -140,12 +131,12 @@ export default class BetHistoryRocketXTableBodyRow extends ObserverComponent {
     }
 
     isBetRowData(betDetail: DynamicObject<object>, betKey: string): boolean {
-        let actionName = betDetail.action.toString();
+        const actionName = betDetail.action.toString();
         return actionName === gc.GameClientEmitMessage.Bet.eventName.toString() && betDetail.betKey.toString() === betKey;
     }
 
     isSettledData(betDetail: DynamicObject<object>, betKey: string): boolean {
-        let actionName = betDetail.action.toString();
+        const actionName = betDetail.action.toString();
         return (
             (actionName === CrashUtils.betEventNames.cashOut || actionName === CrashUtils.betEventNames.refund) &&
             betDetail.betKey.toString() === betKey

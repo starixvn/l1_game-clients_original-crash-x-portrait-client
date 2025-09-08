@@ -1,5 +1,5 @@
 import gc from "@sg/game-client-base";
-import { _decorator, Component, Label, Node } from "cc";
+import { _decorator, Component, Label} from "cc";
 import { CrashUtils } from "../../../crash-utils";
 
 const { ccclass, property } = _decorator;

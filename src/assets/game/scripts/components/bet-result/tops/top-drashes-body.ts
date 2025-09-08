@@ -4,7 +4,7 @@ import Observer from "observer";
 import { TopCrashItem } from "../../../handlers/api-client/top-result-client";
 import { TopCrashStore } from "../../../handlers/crash-v2/bet/top-crash-store";
 import { TopCrashHandlers } from "../../../handlers/crash-v2/handlers/top-crash-handlers";
-import TopDrashesBodyItem from "./top-crashes-body-item";
+import TopCrashesBodyItem from "./top-crashes-body-item";
 
 const { ccclass, property } = _decorator;
 const { render, handle } = Observer;
@@ -18,10 +18,10 @@ export class TopDrashesBody extends ObserverComponent {
     itemPrefab: Prefab = null;
 
     @property({ type: CCInteger, tooltip: "0: Monthly, 1: Yearly" })
-    periodType: number = 0;
+    periodType = 0;
 
-    private currentIndex: number = 0;
-    private itemHeight: number = 0;
+    private currentIndex = 0;
+    private itemHeight = 0;
 
     @render(TopCrashStore, (store) => store.topCrashItems, { fireImmediately: false })
     bindContent(topCrashItems: TopCrashItem[]) {
@@ -30,11 +30,11 @@ export class TopDrashesBody extends ObserverComponent {
         }
 
         topCrashItems.forEach((data, rowIndex) => {
-            let item = this.buildBodyRow(this.itemPrefab, rowIndex, data);
+            const item = this.buildBodyRow(this.itemPrefab, rowIndex, data);
             this.content.addChild(item);
 
-            let currentPosition = item.getPosition();
-            let y = -this.itemHeight / 2 - this.currentIndex * this.itemHeight;
+            const currentPosition = item.getPosition();
+            const y = -this.itemHeight / 2 - this.currentIndex * this.itemHeight;
             item.setPosition(currentPosition.x, y);
             this.currentIndex++;
         });
@@ -43,7 +43,7 @@ export class TopDrashesBody extends ObserverComponent {
     }
 
     getHistoryItemComponent(node: Node) {
-        return node.getComponent(TopDrashesBodyItem);
+        return node.getComponent(TopCrashesBodyItem);
     }
 
     buildBodyRow(bodyItemPrefab: Prefab, index: number, data: TopCrashItem): Node {
@@ -53,8 +53,8 @@ export class TopDrashesBody extends ObserverComponent {
     }
 
     @handle(TopCrashHandlers, (handle, periodType: number) => handle.getTopCrashByType(periodType))
-    getTopCrashItems() { 
-        return this.periodType; 
+    getTopCrashItems() {
+        return this.periodType;
     }
 
     onLoad() {

@@ -6,17 +6,20 @@ const { ccclass, property, executeInEditMode } = _decorator;
 @ccclass("ProbablyFairRichText")
 @executeInEditMode
 export class ProbablyFairRichText extends Component {
-    richText: RichText | null = null;
+    private richText: RichText | null = null;
 
-    @property({ visible: false })
-    key: string = "";
+    @property({ displayName: "Key" })
+    private _key = "";
 
-    @property({ displayName: "Key", visible: true })
-    get _key() {
-        return this.key;
+    get key(): string {
+        return this._key;
     }
-    set _key(str: string) {
-        this.key = str;
+
+    set key(value: string) {
+        if (this._key === value) {
+            return;
+        }
+        this._key = value;
         this.updateRichText();
     }
 
@@ -27,24 +30,24 @@ export class ProbablyFairRichText extends Component {
         this.fetchRender();
     }
 
-    setKey(key: string) {
-        this._key = key;
-    }
-
-    fetchRender() {
-        let richText = this.getComponent(RichText);
+    private fetchRender(): void {
+        const richText = this.getComponent(RichText);
         if (richText) {
             this.richText = richText;
             this.updateRichText();
-            return;
         }
     }
 
-    updateRichText() {
+    private updateRichText(): void {
         try {
-            let text = i18n.t(this.key);
-            text = text.replace("{provablyFairIcon}", "<img src='icon-pf' width='30' height='30' vertical-align='middle'/>");
-            this.richText && (this.richText.string = text);
+            let text = i18n.t(this._key) || this._key;
+            text = text.replace(
+                "{provablyFairIcon}",
+                "<img src='icon-pf' width='30' height='30' vertical-align='middle'/>"
+            );
+            if (this.richText) {
+                this.richText.string = text;
+            }
         } catch (e) {
             console.log(e);
         }

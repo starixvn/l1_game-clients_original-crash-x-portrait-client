@@ -145,7 +145,6 @@ export class RocketFly extends ObserverComponent {
     private prepareForRocket(animated: boolean) {
         this.preparingRocket = true;
         this.updateRocketTailWidth(0);
-       // this.cpnRocket.prepareRocket(this.startRotation, animated);
         this.cpnRocket.updatePosition(this.startPosition);
         this.resetRocketContainer();
         this.reachedLimitX = false;

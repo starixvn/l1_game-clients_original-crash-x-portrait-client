@@ -10,7 +10,7 @@ const { DateTimeUtils, FormatUtils } = gc;
 const { handle } = Observer;
 
 @ccclass
-export default class TopDrashesBodyItem extends ObserverComponent {
+export default class TopCrashesBodyItem extends ObserverComponent {
     @property(Label)
     lblDate: Label = null;
 

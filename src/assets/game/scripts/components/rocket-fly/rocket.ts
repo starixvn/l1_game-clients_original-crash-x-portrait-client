@@ -62,7 +62,6 @@ export class Rocket extends Component {
     onLoad() {
         this.setRocketVisibility(false);
         this.setExplosionRocketVisibility(false);
-        //this.setSpaceManVisibility(false);
     }
 
     startFly() {
@@ -81,12 +80,9 @@ export class Rocket extends Component {
     setRocketAnim(name: string, loop: boolean) {
         this.skeRocket?.setAnimation(0, name, true);
         this.updateTailVisibility(name);
-        //this.nodeRocketHeadEffect.active = name === RocketAnim.FLY;
     }
 
     updateTailVisibility(name: string) {
-        //this.nodeTailStart.active = name === RocketAnim.START;
-        //this.nodeRocketTail.active = name === RocketAnim.FLY;
         if (name === RocketAnim.IDLE) {
             this.flyParticle.stopSystem();
         }
@@ -127,7 +123,6 @@ export class Rocket extends Component {
         this.setRocketVisibility(true);
         this.setExplosionRocketVisibility(false);
         const onFinished = () => {
-            //this.setSpaceManVisibility(false);
             this.setRocketAnim(RocketAnim.START, true);
         };
         if (!animated) {
@@ -135,7 +130,6 @@ export class Rocket extends Component {
             return;
         }
         this.updateRotation(0);
-        //this.setSpaceManVisibility(true);
         tween(this.node)
             .delay(2)
             .to(2, { eulerAngles: v3(0, 0, startRotation) }, { easing: "sineOut" })

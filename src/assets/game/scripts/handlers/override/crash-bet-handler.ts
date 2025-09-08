@@ -6,7 +6,7 @@ const { injectable, inject } = inversify;
 
 @injectable()
 export class CrashBetHandler extends gc.GameCrash.CrashBet.CrashBetHandler {
-    @inject(BetControlStore) private betControlStore: BetControlStore;
+    @inject(BetControlStore) private readonly betControlStore: BetControlStore;
 
     handle() {}
 

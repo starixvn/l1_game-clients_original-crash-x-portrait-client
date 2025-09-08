@@ -19,14 +19,14 @@ export class TopWinsBody extends ObserverComponent {
     itemPrefab: Prefab = null;
 
     @property({ type: CCInteger, tooltip: "0: Monthly, 1: Yearly" })
-    periodType: number = 0;
-    
-    private currentIndex: number = 0;
-    private itemHeight: number = 0;
+    periodType = 0;
+
+    private currentIndex = 0;
+    private itemHeight = 0;
     protected topResultClient: TopResultClient = new TopResultClient();
 
     async fetchData() {
-        let topWinItems: TopWinItem[] = [];
+        const topWinItems: TopWinItem[] = [];
         return topWinItems;
     }
 
@@ -37,11 +37,11 @@ export class TopWinsBody extends ObserverComponent {
         }
 
         topWinItems.forEach((data, rowIndex) => {
-            let item = this.buildBodyRow(this.itemPrefab, rowIndex, data);
+            const item = this.buildBodyRow(this.itemPrefab, rowIndex, data);
             this.content.addChild(item);
 
-            let currentPosition = item.getPosition();
-            let y = -this.itemHeight / 2 - this.currentIndex * this.itemHeight;
+            const currentPosition = item.getPosition();
+            const y = -this.itemHeight / 2 - this.currentIndex * this.itemHeight;
             item.setPosition(currentPosition.x, y);
             this.currentIndex++;
         });
@@ -60,8 +60,8 @@ export class TopWinsBody extends ObserverComponent {
     }
 
     @handle(TopWinHandlers, (handle, periodType: number) => handle.getTopWinByType(periodType))
-    getTopWinItems() { 
-        return this.periodType; 
+    getTopWinItems() {
+        return this.periodType;
     }
 
     onLoad() {

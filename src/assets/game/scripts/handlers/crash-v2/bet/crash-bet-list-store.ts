@@ -51,17 +51,16 @@ export class CrashBetListStore {
     addAcceptedBet(acceptedBetData: MainPlayerBetData) {
         this.mainPlayerCashOut = [...this.mainPlayerCashOut, acceptedBetData];
 
-        //TODO: 2nd bet ??
         if (this.mainPlayer === null || this.mainPlayer === undefined) {
-            let name = acceptedBetData.name;
-            let amount = acceptedBetData.amount;
-            let player = { name, amount };
+            const name = acceptedBetData.name;
+            const amount = acceptedBetData.amount;
+            const player = { name, amount };
             this.mainPlayer = player;
         }
     }
 
     updateCashOutData(cashOutData: MainPlayerBetData) {
-        let cashOut = this.mainPlayerCashOut.find((element) => element.betKey === cashOutData.betKey);
+        const cashOut = this.mainPlayerCashOut.find((element) => element.betKey === cashOutData.betKey);
         if (cashOut) {
             cashOut.win = cashOutData.win;
             cashOut.cashOutWin = cashOutData.cashOutWin;

@@ -161,7 +161,7 @@ export class BetControlStore {
     changeBetAmount(betkey: number, increase: boolean) {
         const amount = this.minBet * (increase ? 1 : -1);
         const currentAmount = this.getBetAmount(betkey);
-        let newAmount = currentAmount + amount;
+        const newAmount = currentAmount + amount;
         this.setValidBetAmount(betkey, newAmount);
     }
 

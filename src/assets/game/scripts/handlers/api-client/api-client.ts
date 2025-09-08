@@ -1,5 +1,5 @@
 class ApiClient {
-    private baseUrl: string;
+    private readonly baseUrl: string;
 
     constructor(baseURL: string) {
         this.baseUrl = baseURL;

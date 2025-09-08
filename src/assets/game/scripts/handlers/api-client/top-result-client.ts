@@ -10,33 +10,29 @@ const { injectable } = inversify;
 
 @injectable()
 export class TopResultClient {
-    private apiClient: ApiClient;
+    private readonly apiClient: ApiClient;
 
     constructor() {
         const path = UrlUtils.getSubDirectory(siteConfigs.subDirectory);
-        let baseURL = UrlUtils.buildUrl("http", `/${path}` , siteConfigs);
+        const baseURL = UrlUtils.buildUrl("http", `/${path}` , siteConfigs);
         this.apiClient = new ApiClient(baseURL);
     }
 
 
     async getTopCrashMonthly() {
-        let response = await this.apiClient.get<TopCrashItem[]>(APISettings.TopCrashMonthly.url + settings.id);
-        return response;
+        return this.apiClient.get<TopCrashItem[]>(APISettings.TopCrashMonthly.url + settings.id);
     }
 
     async getTopCrashYearly() {
-        let response = await this.apiClient.get<TopCrashItem[]>(APISettings.TopCrashYearly.url + settings.id);
-        return response;
+        return this.apiClient.get<TopCrashItem[]>(APISettings.TopCrashYearly.url + settings.id);
     }
 
     async getTopWinMonthly() {
-        let response = await this.apiClient.get<TopWinItem[]>(APISettings.TopWinMonthly.url + settings.id);
-        return response;
+        return this.apiClient.get<TopWinItem[]>(APISettings.TopWinMonthly.url + settings.id);
     }
 
     async getTopWinYearly() {
-        let response = await this.apiClient.get<TopWinItem[]>(APISettings.TopWinYearly.url + settings.id);
-        return response;
+        return this.apiClient.get<TopWinItem[]>(APISettings.TopWinYearly.url + settings.id);
     }
 }
 
@@ -62,7 +58,7 @@ export interface TopCrashItem {
     provablyFair: ProvablyFair;
 }
 
-export interface TopWinItem {   
+export interface TopWinItem {
     cashoutPoint: number;
     crashPoint: number;
     uid: string;

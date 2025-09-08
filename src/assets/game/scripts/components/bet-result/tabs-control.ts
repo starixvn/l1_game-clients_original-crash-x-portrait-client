@@ -20,8 +20,8 @@ export class TabsControl extends ObserverComponent {
     @property({ type: [Prefab] })
     prefabContents: Prefab[] = [];
 
-    private prefabInstances: Map<number, Node> = new Map();
-    private currentTabIndex: number = -1;
+    private readonly prefabInstances: Map<number, Node> = new Map();
+    private currentTabIndex = -1;
 
     onLoad() {
         this.initializeToggles();
@@ -59,7 +59,7 @@ export class TabsControl extends ObserverComponent {
             const isActive = index === activeIndex;
             content.active = isActive;
             this.tabButtons[index].getComponent(Sprite).enabled = isActive;
-            
+
             if (isActive) {
                 this.showTab(index);
             } else {
