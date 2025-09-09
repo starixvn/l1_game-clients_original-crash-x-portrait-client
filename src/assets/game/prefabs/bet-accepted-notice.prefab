@@ -139,7 +139,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 270.84375,
+      "width": 240.75,
       "height": 50.4
     },
     "_anchorPoint": {
@@ -200,8 +200,8 @@
     "_string": "BET ACCEPTED",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
-    "_actualFontSize": 36,
-    "_fontSize": 36,
+    "_actualFontSize": 32,
+    "_fontSize": 32,
     "_fontFamily": "Arial",
     "_lineHeight": 40,
     "_overflow": 0,
@@ -273,8 +273,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 686,
-      "height": 108
+      "width": 548,
+      "height": 88
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",

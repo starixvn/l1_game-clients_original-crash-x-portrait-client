@@ -208,7 +208,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 323.2265625,
+      "width": 262.7578125,
       "height": 75.6
     },
     "_anchorPoint": {
@@ -244,7 +244,7 @@
       "b": 255,
       "a": 255
     },
-    "_string": "TỔNG THẮNG",
+    "_string": "TOTAL WIN",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
     "_actualFontSize": 48,
@@ -372,8 +372,8 @@
     "topColor": {
       "__type__": "cc.Color",
       "r": 255,
-      "g": 248,
-      "b": 50,
+      "g": 250,
+      "b": 221,
       "a": 255
     },
     "bottomColor": {
