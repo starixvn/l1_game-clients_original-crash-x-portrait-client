@@ -87,7 +87,7 @@ export default class BetHistoryRocketXTableBodyRow extends ObserverComponent {
         return betDetail === undefined ? 0 : Number(betDetail.amount);
     }
 
-    private getTotalAmountFromBetLogDetails(betHistoryLog: gc.BetHistory.BetHistoryLog): number {
+    public getTotalAmountFromBetLogDetails(betHistoryLog: gc.BetHistory.BetHistoryLog): number {
         return betHistoryLog.betLogDetails
             .filter((element) => this.isBetRowData(element, element.betKey.toString()))
             .reduce((total, betDetail) => total + Number(betDetail.amount), 0);
