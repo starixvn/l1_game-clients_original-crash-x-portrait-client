@@ -1,4 +1,4 @@
-import gc, { DateTimeUtils } from "@sg/game-client-base";
+import gc from "@sg/game-client-base";
 import { _decorator, Color, Label } from "cc";
 
 
@@ -24,8 +24,6 @@ export class CrashxBetDetailItem extends BaseBetDetailLogItem {
 
     @property(Label)
     lblBet: Label = null;
-
-
 
     setData(data: BetDetailLogItemType) {
 
