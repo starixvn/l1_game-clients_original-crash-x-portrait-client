@@ -63,7 +63,6 @@ export default class BetHistoryRocketXTableBodyRow extends ObserverComponent {
         this.betHistoryLog = betHistoryLog;
         this.nodeBackground.active = index % 2 > 0;
         this.setLabels(betHistoryLog);
-        console.log("setData", this.betHistoryLog);
     }
 
     private getBetTime(betHistoryLog: gc.BetHistory.BetHistoryLog, betKey: number): string {
@@ -149,7 +148,10 @@ export default class BetHistoryRocketXTableBodyRow extends ObserverComponent {
         return gc.Audios.AudioIds.CLICK;
     }
 
-    @handle(gc.GameCrash.ProvablyFair.ProvablyFairHandler, (handle, roundId: number) => handle.openVerificationHistory(roundId))
+    @handle(gc.GameCrash.ProvablyFair.ProvablyFairHandler, (handle, roundId: number) => {
+        console.log("Handler called with roundId:", roundId);
+        return handle.openVerificationHistory(roundId);
+    })
     onClickVerify() {
         this.playSoundClick();
         return this.betHistoryLog.roundId;

@@ -94,7 +94,7 @@
         "__id__": 35
       }
     ],
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 43
@@ -1183,7 +1183,7 @@
     "_lpos": {
       "__type__": "cc.Vec3",
       "x": 0,
-      "y": 588,
+      "y": 633,
       "z": 0
     },
     "_lrot": {
@@ -2240,7 +2240,7 @@
     "__prefab": {
       "__id__": 91
     },
-    "key": "RocketX.glossary_this_game_is_provably_fair",
+    "_key": "",
     "_id": ""
   },
   {
@@ -2354,7 +2354,7 @@
     "_contentSize": {
       "__type__": "cc.Size",
       "width": 740,
-      "height": 1404
+      "height": 1314
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",

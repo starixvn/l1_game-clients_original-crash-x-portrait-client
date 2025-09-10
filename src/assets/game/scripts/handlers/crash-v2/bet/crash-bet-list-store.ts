@@ -113,4 +113,16 @@ export class CrashBetListStore {
     get totalMainPlayerCashOut(): number {
         return this.mainPlayerCashOut.reduce((acc, curr) => acc + (curr.win ?? 0), 0);
     }
+
+    get noOfBets(): number {
+        const mainPlayerBets = this.mainPlayerCashOut.length;
+        const otherPlayersBets = this.otherPlayers.length;
+        return mainPlayerBets + otherPlayersBets;
+    }
+
+    get noOfCashOuts(): number {
+        const mainPlayerCashOuts = this.mainPlayerCashOut.filter(bet => bet.win > 0).length;
+        const otherPlayersCashOuts = this.otherPlayers.filter(player => player.win > 0).length;
+        return mainPlayerCashOuts + otherPlayersCashOuts;
+    }
 }

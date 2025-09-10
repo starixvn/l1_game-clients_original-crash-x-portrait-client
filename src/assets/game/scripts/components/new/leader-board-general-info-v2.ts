@@ -20,14 +20,14 @@ export class LeaderBoardGeneralInfoV2 extends ObserverComponent {
     @property(Label)
     lblTotalCashOut: Label = null;
 
-    @render(CrashBetListStore, (store) => store.noOfPlayerBet)
-    private updateNoOfPlayersBet(noOfPlayers: number) {
-        this.lblNoOfPlayersBet.string = noOfPlayers.toString();
+    @render(CrashBetListStore, (store) => store.noOfBets)
+    private updateNoOfBets(noOfBets: number) {
+        this.lblNoOfPlayersBet.string = noOfBets.toString();
     }
 
-    @render(CrashBetListStore, (store) => store.noOfPlayerCashOut)
-    private updateNoOfPlayersCashOut(noOfPlayerCashOut: number) {
-        this.lblNoOfPlayerCashOut.string = noOfPlayerCashOut.toString();
+    @render(CrashBetListStore, (store) => store.noOfCashOuts)
+    private updateNoOfCashOuts(noOfCashOuts: number) {
+        this.lblNoOfPlayerCashOut.string = noOfCashOuts.toString();
     }
 
     @render(CrashBetListStore, (store) => store.totalCashOut)
