@@ -5,7 +5,7 @@ import Observer from "observer";
 import { BaseBetDetailSummaryTable } from "db://shared-components/game/bet-history/scripts/components/bet-detail/bet-detail-summary-table";
 
 const { ccclass, property } = _decorator;
-const { FormatUtils } = gc;
+const { FormatUtils, GameCrash } = gc;
 const { handle } = Observer;
 
 @ccclass()
@@ -18,9 +18,13 @@ export class CrashxBetDetailSummary extends BaseBetDetailSummaryTable {
 
     betHistoryLog: gc.BetHistory.BetHistoryLog = null;
 
+    private roundId: number;
+
     renderResult(model: gc.BetHistory.BetDetailModel) {
         const { roundId, result } = model.betHistoryLog;
+        this.roundId = roundId;
         this.betHistoryLog = model.betHistoryLog;
+        console.log("renderResult", this.betHistoryLog);
         this.lblRound.string = roundId.toString();
         this.lblCrashPoint.string = `${FormatUtils.numberWithCommas(+result, 2, false)}x`;
     }
@@ -30,10 +34,10 @@ export class CrashxBetDetailSummary extends BaseBetDetailSummaryTable {
         return gc.Audios.AudioIds.CLICK;
     }
 
-    @handle(gc.GameCrash.ProvablyFair.ProvablyFairHandler, (handle, roundId: number) => handle.openVerificationHistory(roundId))
+    @handle(gc.RoundBasePF.ProvablyFairHandler, (handle, roundId: number) => handle.openVerificationHistory(roundId))
     onClickVerify() {
         this.playSoundClick();
-        console.log("onClickVerify", this.betHistoryLog.roundId);
-        return this.betHistoryLog.roundId;
+        console.log("onClickVerify", this.roundId);
+        return this.roundId;
     }
 }

@@ -4,7 +4,7 @@ const { ccclass, property } = _decorator;
 export class CrashUtils extends Component {
     static readonly config = {
         thresholds: [2, 5, 10],
-        colors: ["01d8ff", "ff9601", "ff010d", "D608FB"],
+        colors: ["01d8ff", "FFD900", "ff010d", "D608FB"],
         colorNames: ["blue", "orange", "red", "purple"],
         whiteColor: "E6E5DF",
         tabColors: {

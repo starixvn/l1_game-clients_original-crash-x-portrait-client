@@ -738,7 +738,7 @@
             <key>size</key>
             <string>{2048,2048}</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:0ef9488e495776e2e9e026f56537ecd8:1f627f0055cd358550527d8606672e44:d699d03194826f409f1cefa0380c0595$</string>
+            <string>$TexturePacker:SmartUpdate:d1cd074f6e04799ff76fc167971872fb:f0f7e52e220d8b8ffa3ed99f740eb5ae:d699d03194826f409f1cefa0380c0595$</string>
             <key>textureFileName</key>
             <string>game-portrait-atlas.webp</string>
         </dict>
