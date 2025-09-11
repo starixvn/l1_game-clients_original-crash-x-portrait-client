@@ -1,10 +1,10 @@
 import gc from "@sg/game-client-base";
-import { _decorator, Color, Label, Prefab } from "cc";
+import { _decorator, Color, Component, Label, Prefab } from "cc";
 import { reverse } from "lodash-es";
 
-import { BetDetailLogTable } from "db://shared-components/game/bet-history/scripts/components/bet-detail/bet-detail-log-table";
 import { ReachMaxWin } from "db://shared-components/game-crash/bet-history-details/scripts/reach-max-win";
 import { DynamicObject } from "@sg/game-client-base/dist/game/bet-history/bet-history-store";
+import { CrashGameBetDetailLogTable } from "db://shared-components/game-crash/bet-history-details/scripts/crash-game-bet-detail-log-table";
 const { FormatUtils } = gc;
 
 const { ccclass, property } = _decorator;
@@ -17,7 +17,7 @@ interface IBetDetailLog {
 }
 
 @ccclass
-export class CrashxBetDetailTable extends BetDetailLogTable {
+export class CrashxBetDetailTable extends CrashGameBetDetailLogTable {
     @property(ReachMaxWin)
     cpnReachMaxWin: ReachMaxWin = null;
 
@@ -29,6 +29,11 @@ export class CrashxBetDetailTable extends BetDetailLogTable {
 
     @property(Label)
     lblWinLoss: Label = null;
+
+    @property(Component)
+    verificationHandler: Component = null;
+
+    betHistoryLog: gc.BetHistory.BetHistoryLog = null;
 
     isBetRowData(betDetail: DynamicObject<object>, betKey: string): boolean {
         const actionName = betDetail.action.toString();
@@ -43,6 +48,7 @@ export class CrashxBetDetailTable extends BetDetailLogTable {
     showBetDetail(bodyItemPrefab: Prefab, model: gc.BetHistory.BetDetailModel) {
         const { fractionalOddsFormat, betHistoryLog } = model;
         const { result, settlementResult, odds, freeBet, betLogDetails } = betHistoryLog;
+        this.betHistoryLog = betHistoryLog;
         const reversedLogs = reverse([...betLogDetails]);
 
         this.cpnReachMaxWin?.setData(reversedLogs);
@@ -58,20 +64,17 @@ export class CrashxBetDetailTable extends BetDetailLogTable {
         }
 
         reversedLogs.forEach((betDetailsLog, index) => {
-            if (betDetailsLog.action.toString() !== gc.GameClientEmitMessage.Bet.eventName.toString()) {
-                this.body.addChild(
-                    this.buildBodyRow(bodyItemPrefab, {
-                        betDetailsLog,
-                        index,
-                        odds,
-                        settlementResult,
-                        result,
-                        freeBet,
-                        fractionalOddsFormat,
-                    })
-                );
-            }
-
+            this.body.addChild(
+                this.buildBodyRow(bodyItemPrefab, {
+                    betDetailsLog,
+                    index,
+                    odds,
+                    settlementResult,
+                    result,
+                    freeBet,
+                    fractionalOddsFormat,
+                })
+            );
         });
     }
 }

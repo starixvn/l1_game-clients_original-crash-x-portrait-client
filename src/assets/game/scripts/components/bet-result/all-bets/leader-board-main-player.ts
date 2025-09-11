@@ -11,7 +11,7 @@ export class LeaderBoardMainPlayer extends Component {
     @property(LeaderBoardCashOut)
     firstRow: LeaderBoardCashOut = null;
 
-    @property(LeaderBoardCashOut) 
+    @property(LeaderBoardCashOut)
     secondRow: LeaderBoardCashOut = null;
 
     onLoad() {
@@ -39,18 +39,19 @@ export class LeaderBoardMainPlayer extends Component {
 
     private updateRowData(row: LeaderBoardCashOut, data: MainPlayerBetData) {
         const hasWon = data.win !== undefined && data.win > 0;
-        
+
         const rowData = {
             name: data.name,
             amount: data.amount,
             ...(hasWon && {
                 multiplier: data.multiplier,
                 win: data.win
-            })
+            }),
+            isMainPlayer: true
         };
 
-        row.setData(rowData, 0);
-        
+        row.setData(rowData);
+
         if (hasWon) {
             row.lblMultiplier.color = CrashUtils.getMultiplierColor(data.multiplier);
         } else {

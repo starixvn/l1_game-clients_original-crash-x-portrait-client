@@ -1,11 +1,10 @@
 import gc from "@sg/game-client-base";
 import { _decorator, Label } from "cc";
-import Observer from "observer";
+
 import { ObserverComponent } from "db://shared-components/shared/common-components/observer-component/scripts/observer-component";
 
 const { ccclass, property } = _decorator;
 const { FormatUtils } = gc;
-const { handle } = Observer;
 
 @ccclass()
 export class CrashxBetDetailSummary extends ObserverComponent {
@@ -24,18 +23,5 @@ export class CrashxBetDetailSummary extends ObserverComponent {
         this.lblCrashPoint.string = `${FormatUtils.numberWithCommas(+result, 2, false)}x`;
     }
 
-    @handle(gc.Audios.AudioHandler, (handle, id: string) => handle.playSFX(id))
-    playSoundClick() {
-        return gc.Audios.AudioIds.CLICK;
-    }
 
-    @handle(gc.GameCrash.ProvablyFair.ProvablyFairHandler, (handle, roundId: number) => {
-        console.log("Handler called with roundId:", roundId);
-        return handle.openVerificationHistory(roundId);
-    })
-    onClickVerify() {
-        this.playSoundClick();
-        console.log("onClickVerify called, roundId:", this.betHistoryLog.roundId);
-        return this.betHistoryLog.roundId;
-    }
 }

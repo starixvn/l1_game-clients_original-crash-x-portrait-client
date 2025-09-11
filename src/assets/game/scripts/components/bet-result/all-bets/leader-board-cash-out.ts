@@ -10,6 +10,7 @@ interface ILeaderBoardCashOutData {
     amount: number;
     multiplier?: number;
     win?: number;
+    isMainPlayer?: boolean;
 }
 
 @ccclass
@@ -27,8 +28,8 @@ export class LeaderBoardCashOut extends Component {
     lblBetAmount: Label = null;
 
     setData(data: ILeaderBoardCashOutData) {
-        const { name, multiplier, win, amount } = data;
-        this.lblName.string = CrashUtils.encryptedName(name);
+        const { name, multiplier, win, amount, isMainPlayer } = data;
+        this.lblName.string = isMainPlayer ? name : CrashUtils.encryptedName(name);
         this.lblBetAmount.string = FormatUtils.numberWithCommas(amount, 2);
         const hasCashedOut = multiplier > 0;
         this.lblMultiplier.string = hasCashedOut ? `${FormatUtils.numberWithCommas(multiplier, 2, false)}x` : "-";

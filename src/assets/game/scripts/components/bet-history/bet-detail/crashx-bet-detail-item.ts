@@ -37,6 +37,7 @@ export class CrashxBetDetailItem extends BaseBetDetailLogItem {
         this.lblWin.string = FormatUtils.numberWithCommas(winAmount, 2);
         this.setHighlightTicketDetail(winAmount > 0);
     }
+
     setHighlightTicketDetail(highlight: boolean) {
         const color = highlight ? Color.YELLOW : Color.WHITE;
         this.lblWin.color = color;
