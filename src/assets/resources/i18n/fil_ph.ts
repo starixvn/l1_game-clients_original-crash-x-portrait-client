@@ -236,17 +236,17 @@ export const languages = {
         "player": "Player",
         "bet_amount": "Bet Amount",
         "bet_detail_note": "Ang mga datos ay makikita lamang sa loob ng nakalipas na 7 araw mula sa kasalukuyang petsa.",
-        "players": null,
-        "original_tagline": null,
+        "players": "Mga Manlalaro",
+        "original_tagline": "Maglaro nang Bago, Manalo nang Pinakamahusay",
         "auto_cashout": "AWTOMATIKONG CASHOUT",
         "auto_play": "AUTO-PLAY",
-        "bet_accepted": "Taya Tinanggap\n\n",
-        "chip_value": null,
+        "bet_accepted": "Taya Tinanggap",
+        "chip_value": "Halaga ng Chip",
         "total_bet": "Kabuuang Taya",
-        "waiting_for_the_next_round": null,
-        "show_more": null,
-        "show_less": null,
-        "start_in": "Magsisimula sa {time}",
+        "waiting_for_the_next_round": "Naghihintay para sa susunod na round",
+        "show_more": "Ipakita pa",
+        "show_less": "Ipakita ang kaunti",
+        "start_in": "Magsisimula sa {time}s",
         "cancel_bet": "(Alisin ang Taya)",
         "cashed": "NAKUHA",
         "cashout": "Cashout",
@@ -255,7 +255,17 @@ export const languages = {
         "my_bets": "Ang Aking Mga Taya",
         "waiting": "Naghihintay...",
         "bet_slip": "Slip ng Pusta",
-        "game": "laro"
+        "game": "laro",
+        "auto_rebet": "Auto Rebet",
+        "label_custom_rounds": "Pasadyang bilang ng mga round",
+        "scoreboard_odd": "O",
+        "scoreboard_even": "E",
+        "tooltip_double": "Dobleng Nakaraang Bet",
+        "tooltip_sound": "Tunog",
+        "tooltip_guide": "Gabay sa Laro",
+        "tooltip_fairness": "Fairness",
+        "lock_bet": "Maghintay ng resulta",
+        "tooltip_stat": "View stat"
     },
     "Spaceflight": {
         "game_name": "Spaceflight",
@@ -324,7 +334,8 @@ export const languages = {
     },
     "Crash X": {
         "game_name": "Crash X",
-        "game_icon_name": "Crash X"
+        "game_icon_name": "Crash X",
+        "cashed_bets": null
     }
 };
 

@@ -236,17 +236,17 @@ export const languages = {
         "player": "Jugador",
         "bet_amount": "Monto de Apuesta",
         "bet_detail_note": "Los datos solo están disponibles para los últimos 7 días a partir de la fecha actual.",
-        "players": null,
-        "original_tagline": null,
+        "players": "Jugadores",
+        "original_tagline": "Juega Fresco, Gana Mejor",
         "auto_cashout": "Auto Retiro",
         "auto_play": "Juego Automático",
         "bet_accepted": "Apuesta Aceptada",
-        "chip_value": null,
+        "chip_value": "Valor de la ficha",
         "total_bet": "Apuesta Total",
-        "waiting_for_the_next_round": null,
-        "show_more": null,
-        "show_less": null,
-        "start_in": "Comienza en {time}",
+        "waiting_for_the_next_round": "Esperando la siguiente ronda",
+        "show_more": "Mostrar más",
+        "show_less": "Mostrar menos",
+        "start_in": "Comienza en {time}s",
         "cancel_bet": "(Cancelar Apuesta)",
         "cashed": "Retirado",
         "cashout": "Retirar",
@@ -255,7 +255,17 @@ export const languages = {
         "my_bets": "Mis apuestas",
         "waiting": "Esperando...",
         "bet_slip": "Boleto de Apuestas",
-        "game": "juego"
+        "game": "juego",
+        "auto_rebet": "Apuesta automática de nuevo",
+        "label_custom_rounds": "Número de rondas personalizado",
+        "scoreboard_odd": "I",
+        "scoreboard_even": "P",
+        "tooltip_double": "Doblar la apuesta anterior",
+        "tooltip_sound": "Sonido",
+        "tooltip_guide": "Guías de Juego",
+        "tooltip_fairness": "Equidad",
+        "lock_bet": "Esperando resultado",
+        "tooltip_stat": "View stat"
     },
     "Spaceflight": {
         "auto_cashout": "Auto Retiro",
@@ -324,7 +334,8 @@ export const languages = {
     },
     "Crash X": {
         "game_name": "Crash X",
-        "game_icon_name": "Crash X"
+        "game_icon_name": "Crash X",
+        "cashed_bets": "Cashed Bets"
     }
 };
 

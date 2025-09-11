@@ -230,23 +230,23 @@ export const languages = {
         "invalid_jackpot": "invalid_jackpot",
         "opened_jackpot": "opened_jackpot",
         "no_data": "Không có dữ liệu.",
-        "all": null,
+        "all": "Tất cả",
         "message_loading": "Đang tải",
         "message_error_claim_expired": "Thời gian nhận thưởng đã hết. (%{errorCode}) ",
         "player": "Người Chơi",
         "bet_amount": "Tiền Cược",
         "bet_detail_note": "Dữ liệu chỉ khả dụng trong 7 ngày gần nhất tính từ ngày hiện tại.",
         "players": "Người Chơi",
-        "original_tagline": null,
+        "original_tagline": "Chơi Mới Mẻ, Thắng Lớn Nhất",
         "auto_cashout": "TỰ ĐỘNG RÚT TIỀN",
         "auto_play": "CHƠI TỰ ĐỘNG",
-        "bet_accepted": "Đã Nhận Cược",
+        "bet_accepted": "Đã\nNhận Cược",
         "chip_value": "Giá trị chip",
         "total_bet": "Tổng Cược",
-        "waiting_for_the_next_round": null,
-        "show_more": null,
-        "show_less": null,
-        "start_in": "Bắt đầu sau",
+        "waiting_for_the_next_round": "Đang chờ phiên tiếp theo",
+        "show_more": "Xem thêm",
+        "show_less": "Thu gọn",
+        "start_in": "Bắt đầu sau {time}s",
         "cancel_bet": "(Hủy Cược)",
         "cashed": "Rút Tiền",
         "cashout": "Rút Tiền",
@@ -255,7 +255,17 @@ export const languages = {
         "my_bets": "Cược Của Tôi",
         "waiting": "ĐANG CHỜ...",
         "bet_slip": "Phiếu Cược",
-        "game": "Trò Chơi"
+        "game": "Trò Chơi",
+        "auto_rebet": "Tự động cược lại",
+        "label_custom_rounds": "Tùy chỉnh số lượt",
+        "scoreboard_odd": "L",
+        "scoreboard_even": "C",
+        "tooltip_double": "Gấp đôi cược trước",
+        "tooltip_sound": "Âm thanh",
+        "tooltip_guide": "Hướng dẫn",
+        "tooltip_fairness": "Minh bạch",
+        "lock_bet": "Đang chờ kết quả",
+        "tooltip_stat": "Xem thống kê"
     },
     "Spaceflight": {
         "auto_cashout": "TỰ ĐỘNG RÚT TIỀN",
@@ -324,7 +334,8 @@ export const languages = {
     },
     "Crash X": {
         "game_name": "Crash X",
-        "game_icon_name": "Crash X"
+        "game_icon_name": "Crash X",
+        "cashed_bets": "Cược Đã Rút"
     }
 };
 

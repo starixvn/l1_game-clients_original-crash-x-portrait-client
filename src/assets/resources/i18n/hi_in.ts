@@ -238,24 +238,34 @@ export const languages = {
         "bet_detail_note": "Data are only available within the last 7 days from the current date.",
         "players": "Players",
         "original_tagline": "Play Fresh, Win Best",
-        "auto_cashout": null,
-        "auto_play": null,
-        "bet_accepted": null,
+        "auto_cashout": "ऑटो कैशआउट",
+        "auto_play": "ऑटो प्ले",
+        "bet_accepted": "शर्त स्वीकार की गई",
         "chip_value": "Chip Value",
         "total_bet": "Total Bet",
         "waiting_for_the_next_round": "Waiting for the next round",
         "show_more": "Show More",
         "show_less": "Show Less",
-        "start_in": "Start in {time}",
-        "cancel_bet": null,
-        "cashed": null,
-        "cashout": null,
-        "message_bet_is_accepted": null,
-        "message_total_cashout_reach_max": null,
-        "my_bets": null,
-        "waiting": null,
-        "bet_slip": null,
-        "game": null
+        "start_in": "Start in {time}s",
+        "cancel_bet": "(शर्त रद्द करें)",
+        "cashed": "निकासी",
+        "cashout": "कैशआउट",
+        "message_bet_is_accepted": "शर्त स्वीकार कर ली गई है",
+        "message_total_cashout_reach_max": "कुल कैशआउट राशि अधिकतम जीत तक पहुँच गई है",
+        "my_bets": "मेरी बेट्स",
+        "waiting": "प्रतीक्षा कर रहे हैं...",
+        "bet_slip": "बेट स्लिप",
+        "game": "गेम",
+        "auto_rebet": null,
+        "label_custom_rounds": null,
+        "scoreboard_odd": "O",
+        "scoreboard_even": "E",
+        "tooltip_double": "Double Previous Bet",
+        "tooltip_sound": "Sound",
+        "tooltip_guide": "Game Guides",
+        "tooltip_fairness": "Fairness",
+        "lock_bet": "Waiting for the result",
+        "tooltip_stat": "View stat"
     },
     "Spaceflight": {
         "game_name": "Spaceflight",
@@ -324,7 +334,8 @@ export const languages = {
     },
     "Crash X": {
         "game_name": "Crash X",
-        "game_icon_name": "Crash X"
+        "game_icon_name": "Crash X",
+        "cashed_bets": "Cashed Bets"
     }
 };
 

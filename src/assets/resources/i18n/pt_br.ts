@@ -236,17 +236,17 @@ export const languages = {
         "player": "Jogador",
         "bet_amount": "Valor da Aposta",
         "bet_detail_note": "Os dados estão disponíveis apenas para os últimos 7 dias a partir da data atual.",
-        "players": null,
-        "original_tagline": null,
+        "players": "Jogadores",
+        "original_tagline": "Jogue Fresco, Ganhe o Melhor",
         "auto_cashout": "SAQUE AUTOMÁTICO",
         "auto_play": "JOGADA AUTOMÁTICA",
         "bet_accepted": "Aposta Aceita",
-        "chip_value": null,
+        "chip_value": "Valor da Ficha",
         "total_bet": "Aposta Total",
-        "waiting_for_the_next_round": null,
-        "show_more": null,
-        "show_less": null,
-        "start_in": "Começa em {time}",
+        "waiting_for_the_next_round": "Aguardando a próxima rodada",
+        "show_more": "Mostrar Mais",
+        "show_less": "Mostrar Menos",
+        "start_in": "Começa em {time}s",
         "cancel_bet": "(Cancelar Aposta)",
         "cashed": "SACADO",
         "cashout": "Saque",
@@ -255,7 +255,17 @@ export const languages = {
         "my_bets": "Minhas Apostas",
         "waiting": "Aguardando...",
         "bet_slip": "Boletim de Apostas",
-        "game": "jogo"
+        "game": "jogo",
+        "auto_rebet": "Reaposta Automática",
+        "label_custom_rounds": "Número personalizado de rodadas",
+        "scoreboard_odd": "O",
+        "scoreboard_even": "E",
+        "tooltip_double": "Dobrar Aposta Anterior",
+        "tooltip_sound": "Som",
+        "tooltip_guide": "Regras do Jogo",
+        "tooltip_fairness": "Justeza",
+        "lock_bet": "Aguardando resultado",
+        "tooltip_stat": "View stat"
     },
     "Spaceflight": {
         "game_name": "Voo Espacial",
@@ -324,7 +334,8 @@ export const languages = {
     },
     "Crash X": {
         "game_name": "Crash X",
-        "game_icon_name": "Crash X"
+        "game_icon_name": "Crash X",
+        "cashed_bets": null
     }
 };
 

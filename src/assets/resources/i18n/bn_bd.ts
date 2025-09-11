@@ -238,24 +238,34 @@ export const languages = {
         "bet_detail_note": "Data are only available within the last 7 days from the current date.",
         "players": "Players",
         "original_tagline": "Play Fresh, Win Best",
-        "auto_cashout": null,
-        "auto_play": null,
-        "bet_accepted": null,
+        "auto_cashout": "স্বয়ংক্রিয় ক্যাশআউট",
+        "auto_play": "অটো প্লে",
+        "bet_accepted": "বাজি গৃহীত হয়েছে",
         "chip_value": "Chip Value",
         "total_bet": "Total Bet",
         "waiting_for_the_next_round": "Waiting for the next round",
         "show_more": "Show More",
         "show_less": "Show Less",
-        "start_in": "Start in {time}",
-        "cancel_bet": null,
-        "cashed": null,
-        "cashout": null,
-        "message_bet_is_accepted": null,
-        "message_total_cashout_reach_max": null,
-        "my_bets": null,
-        "waiting": null,
-        "bet_slip": null,
-        "game": null
+        "start_in": "Start in {time}s",
+        "cancel_bet": "(বাজি বাতিল করুন)",
+        "cashed": "ক্যাশ করা হয়েছে",
+        "cashout": "Cashout",
+        "message_bet_is_accepted": "বাজি গ্রহণ করা হয়েছে",
+        "message_total_cashout_reach_max": "মোট ক্যাশআউটের পরিমাণ সর্বোচ্চ উইনে পৌঁছেছে",
+        "my_bets": "আমার বাজি",
+        "waiting": "অপেক্ষা করুন...",
+        "bet_slip": "বাজি স্লিপ",
+        "game": "গেম",
+        "auto_rebet": "Auto Rebet",
+        "label_custom_rounds": "Custom number of rounds",
+        "scoreboard_odd": "O",
+        "scoreboard_even": "E",
+        "tooltip_double": "Double Previous Bet",
+        "tooltip_sound": "Sound",
+        "tooltip_guide": "Game Guides",
+        "tooltip_fairness": "Fairness",
+        "lock_bet": "Waiting for the result",
+        "tooltip_stat": "View stat"
     },
     "Spaceflight": {
         "game_name": "Spaceflight",
@@ -324,7 +334,8 @@ export const languages = {
     },
     "Crash X": {
         "game_name": "Crash X",
-        "game_icon_name": "Crash X"
+        "game_icon_name": "Crash X",
+        "cashed_bets": "Cashed Bets"
     }
 };
 

@@ -1,12 +1,10 @@
 import gc from "@sg/game-client-base";
 import { _decorator, Label } from "cc";
 import Observer from "observer";
-
-import { BaseBetDetailSummaryTable } from "db://shared-components/game/bet-history/scripts/components/bet-detail/bet-detail-summary-table";
 import { ObserverComponent } from "db://shared-components/shared/common-components/observer-component/scripts/observer-component";
 
 const { ccclass, property } = _decorator;
-const { FormatUtils, GameCrash } = gc;
+const { FormatUtils } = gc;
 const { handle } = Observer;
 
 @ccclass()

@@ -246,7 +246,7 @@ export const languages = {
         "waiting_for_the_next_round": "等待下一輪",
         "show_more": "顯示更多",
         "show_less": "顯示更少",
-        "start_in": null,
+        "start_in": "開始於 {time}s",
         "cancel_bet": "取消投注",
         "cashed": "兌現",
         "cashout": "兌現",
@@ -254,8 +254,18 @@ export const languages = {
         "message_total_cashout_reach_max": "提現總額 達到最大勝利",
         "my_bets": "我的投注",
         "waiting": "等待...",
-        "bet_slip": null,
-        "game": "游戲"
+        "bet_slip": "投注單",
+        "game": "游戲",
+        "auto_rebet": "自動重押",
+        "label_custom_rounds": "自訂回合數",
+        "scoreboard_odd": "單",
+        "scoreboard_even": "雙",
+        "tooltip_double": "雙倍先前的投注",
+        "tooltip_sound": "音效",
+        "tooltip_guide": "遊戲指南",
+        "tooltip_fairness": "公平",
+        "lock_bet": "等待結果",
+        "tooltip_stat": "View stat"
     },
     "Spaceflight": {
         "auto_cashout": "自動兌現",
@@ -324,7 +334,8 @@ export const languages = {
     },
     "Crash X": {
         "game_name": "Crash X",
-        "game_icon_name": "Crash X"
+        "game_icon_name": "Crash X",
+        "cashed_bets": "Cashed Bets"
     }
 };
 

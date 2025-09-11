@@ -230,23 +230,23 @@ export const languages = {
         "message_opened_jackpot": "เกม Jackpot ไม่ถูกต้อง",
         "message_opened_bonus": "เกมโบนัสไม่ถูกต้อง",
         "no_data": "ไม่มีข้อมูล",
-        "all": null,
+        "all": "ทั้งหมด",
         "message_loading": "กำลังโหลด",
         "message_error_claim_expired": "โบนัสหมดอายุ ไม่สามารถใช้งานได้อีกต่อไป (%{errorCode})",
         "player": "ผู้เล่น",
         "bet_amount": "จำนวนเงินเดิมพัน",
         "bet_detail_note": "สามารถดูข้อมูลย้อนหลังได้ 7 วันนับจากวันปัจจุบันเท่านั้น",
-        "players": null,
-        "original_tagline": null,
+        "players": "ผู้เล่น",
+        "original_tagline": "เล่นสดใหม่ ชนะเลิศ",
         "auto_cashout": "ถอนเงินอัตโนมัติ",
         "auto_play": "เล่นอัตโนมัติ",
         "bet_accepted": "ยอมรับการเดิมพันแล้ว",
-        "chip_value": null,
+        "chip_value": "มูลค่าชิป",
         "total_bet": "เดิมพันรวม",
-        "waiting_for_the_next_round": null,
-        "show_more": null,
-        "show_less": null,
-        "start_in": null,
+        "waiting_for_the_next_round": "กำลังรอรอบถัดไป",
+        "show_more": "แสดงเพิ่มเติม",
+        "show_less": "แสดงน้อยลง",
+        "start_in": "เริ่มเข้า {time}s",
         "cancel_bet": "(ยกเลิกเดิมพัน)",
         "cashed": "เงินสด",
         "cashout": "ถอนเงิน",
@@ -255,7 +255,17 @@ export const languages = {
         "my_bets": "การเดิมพันของฉัน",
         "waiting": "กำลังรอ...",
         "bet_slip": "สลิปเดิมพัน",
-        "game": "เกม"
+        "game": "เกม",
+        "auto_rebet": "เดิมพันซ้ำอัตโนมัติ",
+        "label_custom_rounds": "จำนวนรอบที่กำหนดเอง",
+        "scoreboard_odd": "คี่",
+        "scoreboard_even": "คู่",
+        "tooltip_double": "เดิมพันสองเท่าก่อนหน้า",
+        "tooltip_sound": "เสียง",
+        "tooltip_guide": "คู่มือเกม",
+        "tooltip_fairness": "ยุติธรรม",
+        "lock_bet": "รอผล",
+        "tooltip_stat": "View stat"
     },
     "Spaceflight": {
         "auto_cashout": "ถอนเงินอัตโนมัติ",
@@ -324,7 +334,8 @@ export const languages = {
     },
     "Crash X": {
         "game_name": "Crash X",
-        "game_icon_name": "Crash X"
+        "game_icon_name": "Crash X",
+        "cashed_bets": null
     }
 };
 

@@ -236,17 +236,17 @@ export const languages = {
         "player": "Oyuncu",
         "bet_amount": "Bahis Tutarı",
         "bet_detail_note": "Veriler yalnızca mevcut tarihten itibaren son 7 gün içinde mevcuttur.",
-        "players": null,
-        "original_tagline": null,
+        "players": "Oyuncular",
+        "original_tagline": "Tazelikle Oyna, En İyisini Kazan",
         "auto_cashout": "OTOMATİK ÇEKİM",
         "auto_play": "OTOMATİK OYNAT",
-        "bet_accepted": "Bahis Kabul Edildi",
-        "chip_value": null,
+        "bet_accepted": "Bahis\nKabul Edildi",
+        "chip_value": "Çip Değeri",
         "total_bet": "Toplam Bahis",
-        "waiting_for_the_next_round": null,
-        "show_more": null,
-        "show_less": null,
-        "start_in": "{time} sonra başla",
+        "waiting_for_the_next_round": "Sonraki tur bekleniyor",
+        "show_more": "Daha Fazla Göster",
+        "show_less": "Daha Az Göster",
+        "start_in": "{time}s sonra başla",
         "cancel_bet": "(Bahsi İptal Et)",
         "cashed": "ÇEKİLDİ",
         "cashout": "Nakit Çekimi",
@@ -254,8 +254,18 @@ export const languages = {
         "message_total_cashout_reach_max": "Toplam nakit çekim tutarları maksimum kazanca ulaştığında",
         "my_bets": "Bahislerim",
         "waiting": "Bekleniyor...",
-        "bet_slip": null,
-        "game": "oyun"
+        "bet_slip": "Bahis Kuponu",
+        "game": "oyun",
+        "auto_rebet": "Otomatik Tekrar Bahis",
+        "label_custom_rounds": "Özel tur sayısı",
+        "scoreboard_odd": "O",
+        "scoreboard_even": "E",
+        "tooltip_double": "Önceki Bahsi İkiye Katla",
+        "tooltip_sound": "Ses",
+        "tooltip_guide": "Oyun Kuralları",
+        "tooltip_fairness": "Adillik",
+        "lock_bet": "Sonuç bekleniyor",
+        "tooltip_stat": "View stat"
     },
     "Spaceflight": {
         "game_name": "Uzay Uçuşu",
@@ -324,7 +334,8 @@ export const languages = {
     },
     "Crash X": {
         "game_name": "Crash X",
-        "game_icon_name": "Crash X"
+        "game_icon_name": "Crash X",
+        "cashed_bets": null
     }
 };
 

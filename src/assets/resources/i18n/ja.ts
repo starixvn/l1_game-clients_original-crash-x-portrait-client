@@ -236,16 +236,16 @@ export const languages = {
         "player": "プレイヤー",
         "bet_amount": "ベット額",
         "bet_detail_note": "データは、現在の日付から過去7日間にのみ利用可能です。",
-        "players": null,
-        "original_tagline": null,
+        "players": "プレイヤー",
+        "original_tagline": "新鮮にプレイして、最高の勝利を",
         "auto_cashout": "オートキャッシュアウト",
         "auto_play": "オートプレイ",
         "bet_accepted": "ベット受付",
-        "chip_value": null,
+        "chip_value": "チップの価値",
         "total_bet": "合計ベット",
-        "waiting_for_the_next_round": null,
-        "show_more": null,
-        "show_less": null,
+        "waiting_for_the_next_round": "次のラウンドをお待ちください",
+        "show_more": "もっと見る",
+        "show_less": "表示を減らす",
         "start_in": "{time}に開始",
         "cancel_bet": "（ベットをキャンセル）",
         "cashed": "キャッシュ済",
@@ -255,7 +255,17 @@ export const languages = {
         "my_bets": "ベット履歴",
         "waiting": "待機中...",
         "bet_slip": "ベットスリップ",
-        "game": "ゲーム"
+        "game": "ゲーム",
+        "auto_rebet": "自動リベット",
+        "label_custom_rounds": "カスタムラウンド数",
+        "scoreboard_odd": "奇",
+        "scoreboard_even": "終",
+        "tooltip_double": "前のベットを倍にする",
+        "tooltip_sound": "サウンド",
+        "tooltip_guide": "ゲームガイド",
+        "tooltip_fairness": "公平性",
+        "lock_bet": "結果を待つ",
+        "tooltip_stat": "View stat"
     },
     "Spaceflight": {
         "auto_cashout": "オートキャッシュアウト",
@@ -324,7 +334,8 @@ export const languages = {
     },
     "Crash X": {
         "game_name": "Crash X",
-        "game_icon_name": "Crash X"
+        "game_icon_name": "Crash X",
+        "cashed_bets": null
     }
 };
 

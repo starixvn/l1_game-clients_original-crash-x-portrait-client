@@ -230,23 +230,23 @@ export const languages = {
         "invalid_jackpot": "invalid_jackpot",
         "opened_jackpot": "opened_jackpot",
         "no_data": "Data tidak tersedia.",
-        "all": null,
+        "all": "Semua",
         "message_loading": "Memuat",
         "message_error_claim_expired": "Bonus berakhir. Tidak lagi tersedia. (%{errorCode})",
         "player": "Player",
         "bet_amount": "JUMLAH TARUHAN",
         "bet_detail_note": "Data hanya tersedia untuk 7 hari terakhir terhitung dari tanggal saat ini.",
-        "players": null,
-        "original_tagline": null,
+        "players": "Pemain",
+        "original_tagline": "Main Segar, Menang Terbaik",
         "auto_cashout": "CASHOUT OTOMATIS",
         "auto_play": "AUTO-PLAY",
         "bet_accepted": "Taruhan Diterima",
-        "chip_value": null,
+        "chip_value": "Nilai Chip",
         "total_bet": "Total Taruhan",
-        "waiting_for_the_next_round": null,
-        "show_more": null,
-        "show_less": null,
-        "start_in": null,
+        "waiting_for_the_next_round": "Menunggu putaran berikutnya",
+        "show_more": "Tampilkan Lebih Banyak",
+        "show_less": "Tampilkan Lebih Sedikit",
+        "start_in": "Mulai masuk {time}s",
         "cancel_bet": "(Batalkan Taruhan)",
         "cashed": "Dicairkan",
         "cashout": "Cashout",
@@ -255,7 +255,17 @@ export const languages = {
         "my_bets": "Taruhan Saya",
         "waiting": "MENUNGGU...",
         "bet_slip": "Slip Taruhan",
-        "game": "game"
+        "game": "game",
+        "auto_rebet": "Rebet Otomatis",
+        "label_custom_rounds": "Jumlah ronde khusus",
+        "scoreboard_odd": "GE",
+        "scoreboard_even": "GE",
+        "tooltip_double": "Gandakan Taruhan Sebelumnya",
+        "tooltip_sound": "Suara",
+        "tooltip_guide": "Panduan Permainan",
+        "tooltip_fairness": "adil",
+        "lock_bet": "Tunggu hasil",
+        "tooltip_stat": "View stat"
     },
     "Spaceflight": {
         "auto_cashout": "CASHOUT OTOMATIS",
@@ -324,7 +334,8 @@ export const languages = {
     },
     "Crash X": {
         "game_name": "Crash X",
-        "game_icon_name": "Crash X"
+        "game_icon_name": "Crash X",
+        "cashed_bets": null
     }
 };
 

@@ -236,17 +236,17 @@ export const languages = {
         "player": "플레이어",
         "bet_amount": "베팅 금액",
         "bet_detail_note": "데이터는 현재 날짜로부터 최근 7일 이내에만 이용 가능합니다.",
-        "players": null,
-        "original_tagline": null,
+        "players": "플레이어",
+        "original_tagline": "신선하게 플레이하고 최고로 승리하세요",
         "auto_cashout": "자동 캐시아웃",
         "auto_play": "자동 플레이",
-        "bet_accepted": "베팅이 수락되었습니다.",
-        "chip_value": null,
+        "bet_accepted": "베팅이\n수락되었습니다",
+        "chip_value": "칩 가치",
         "total_bet": "총 베팅",
-        "waiting_for_the_next_round": null,
-        "show_more": null,
-        "show_less": null,
-        "start_in": null,
+        "waiting_for_the_next_round": "다음 라운드 대기 중",
+        "show_more": "더보기",
+        "show_less": "줄여서 보여주기",
+        "start_in": "{time} 후에 시작",
         "cancel_bet": "(베팅 취소)",
         "cashed": "캐시아웃",
         "cashout": "캐시아웃",
@@ -255,7 +255,17 @@ export const languages = {
         "my_bets": "내 베팅",
         "waiting": "대기 중...",
         "bet_slip": "베팅 전표",
-        "game": "게임"
+        "game": "게임",
+        "auto_rebet": "자동 리벳",
+        "label_custom_rounds": "라운드 수 사용자 지정",
+        "scoreboard_odd": "O",
+        "scoreboard_even": "E",
+        "tooltip_double": "이전 베팅 두 배",
+        "tooltip_sound": "사운드",
+        "tooltip_guide": "게임 가이드",
+        "tooltip_fairness": "공정성",
+        "lock_bet": "결과 대기 중",
+        "tooltip_stat": "View stat"
     },
     "Spaceflight": {
         "game_name": "스페이스플라이트",
@@ -324,7 +334,8 @@ export const languages = {
     },
     "Crash X": {
         "game_name": "Crash X",
-        "game_icon_name": "Crash X"
+        "game_icon_name": "Crash X",
+        "cashed_bets": null
     }
 };
 

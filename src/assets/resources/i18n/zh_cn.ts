@@ -230,7 +230,7 @@ export const languages = {
         "invalid_jackpot": "invalid_jackpot",
         "opened_jackpot": "opened_jackpot",
         "no_data": "无数据可用。",
-        "all": null,
+        "all": "全部",
         "message_loading": "正在加载",
         "message_error_claim_expired": "奖金已过期，不再有效。 (%{errorCode})",
         "player": "玩家",
@@ -246,7 +246,7 @@ export const languages = {
         "waiting_for_the_next_round": "等待下一轮",
         "show_more": "显示更多",
         "show_less": "显示更少",
-        "start_in": null,
+        "start_in": "开始于 {time}s",
         "cancel_bet": "取消投注",
         "cashed": "兑现",
         "cashout": "兑现",
@@ -254,8 +254,18 @@ export const languages = {
         "message_total_cashout_reach_max": "提现总额 达到最大胜利",
         "my_bets": "我的投注",
         "waiting": "等待...",
-        "bet_slip": null,
-        "game": "游戏"
+        "bet_slip": "投注单",
+        "game": "游戏",
+        "auto_rebet": "自动重押",
+        "label_custom_rounds": "自定义回合数",
+        "scoreboard_odd": "单",
+        "scoreboard_even": "双",
+        "tooltip_double": "双倍之前的投注",
+        "tooltip_sound": "声音",
+        "tooltip_guide": "游戏指南",
+        "tooltip_fairness": "公平",
+        "lock_bet": "等待结果",
+        "tooltip_stat": "View stat"
     },
     "Spaceflight": {
         "auto_cashout": "自动兑现",
@@ -324,7 +334,8 @@ export const languages = {
     },
     "Crash X": {
         "game_name": "Crash X",
-        "game_icon_name": "Crash X"
+        "game_icon_name": "Crash X",
+        "cashed_bets": "Cashed Bets"
     }
 };
 

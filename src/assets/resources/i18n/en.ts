@@ -246,7 +246,7 @@ export const languages = {
         "waiting_for_the_next_round": "Waiting for the next round",
         "show_more": "Show More",
         "show_less": "Show Less",
-        "start_in": "Start in {time}",
+        "start_in": "Start in {time}s",
         "cancel_bet": "(Cancel Bet)",
         "cashed": "Cashed",
         "cashout": "Cashout",
@@ -255,7 +255,17 @@ export const languages = {
         "my_bets": "My Bets",
         "waiting": "Waiting...",
         "bet_slip": "Bet Slip",
-        "game": "Game"
+        "game": "Game",
+        "auto_rebet": "Auto Rebet",
+        "label_custom_rounds": "Custom number of rounds",
+        "scoreboard_odd": "O",
+        "scoreboard_even": "E",
+        "tooltip_double": "Double Previous Bet",
+        "tooltip_sound": "Sound",
+        "tooltip_guide": "Game Guides",
+        "tooltip_fairness": "Fairness",
+        "lock_bet": "Waiting for the result",
+        "tooltip_stat": "View stat"
     },
     "Spaceflight": {
         "auto_cashout": "AUTO CASHOUT",
@@ -324,7 +334,8 @@ export const languages = {
     },
     "Crash X": {
         "game_name": "Crash X",
-        "game_icon_name": "Crash X"
+        "game_icon_name": "Crash X",
+        "cashed_bets": "Cashed Bets"
     }
 };
 
