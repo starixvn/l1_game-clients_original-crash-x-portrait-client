@@ -240,7 +240,7 @@ export const languages = {
         "original_tagline": "Maglaro nang Bago, Manalo nang Pinakamahusay",
         "auto_cashout": "AWTOMATIKONG CASHOUT",
         "auto_play": "AUTO-PLAY",
-        "bet_accepted": "Taya Tinanggap",
+        "bet_accepted": "Taya\nTinanggap",
         "chip_value": "Halaga ng Chip",
         "total_bet": "Kabuuang Taya",
         "waiting_for_the_next_round": "Naghihintay para sa susunod na round",
@@ -335,7 +335,7 @@ export const languages = {
     "Crash X": {
         "game_name": "Crash X",
         "game_icon_name": "Crash X",
-        "cashed_bets": null
+        "cashed_bets": "Mga Na-cashout na Taya"
     }
 };
 

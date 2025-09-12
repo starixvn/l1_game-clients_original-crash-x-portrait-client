@@ -240,7 +240,7 @@ export const languages = {
         "original_tagline": "Play Fresh, Win Best",
         "auto_cashout": "ऑटो कैशआउट",
         "auto_play": "ऑटो प्ले",
-        "bet_accepted": "शर्त स्वीकार की गई",
+        "bet_accepted": "शर्त स्वीकार  \nकी गई",
         "chip_value": "Chip Value",
         "total_bet": "Total Bet",
         "waiting_for_the_next_round": "Waiting for the next round",
@@ -335,7 +335,7 @@ export const languages = {
     "Crash X": {
         "game_name": "Crash X",
         "game_icon_name": "Crash X",
-        "cashed_bets": "Cashed Bets"
+        "cashed_bets": "निकाली गई शर्तें"
     }
 };
 

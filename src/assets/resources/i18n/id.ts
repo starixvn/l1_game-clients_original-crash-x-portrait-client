@@ -240,7 +240,7 @@ export const languages = {
         "original_tagline": "Main Segar, Menang Terbaik",
         "auto_cashout": "CASHOUT OTOMATIS",
         "auto_play": "AUTO-PLAY",
-        "bet_accepted": "Taruhan Diterima",
+        "bet_accepted": "Taruhan\nDiterima",
         "chip_value": "Nilai Chip",
         "total_bet": "Total Taruhan",
         "waiting_for_the_next_round": "Menunggu putaran berikutnya",
@@ -335,7 +335,7 @@ export const languages = {
     "Crash X": {
         "game_name": "Crash X",
         "game_icon_name": "Crash X",
-        "cashed_bets": null
+        "cashed_bets": "Taruhan yang Dicashout"
     }
 };
 

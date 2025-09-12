@@ -335,7 +335,7 @@ export const languages = {
     "Crash X": {
         "game_name": "Crash X",
         "game_icon_name": "Crash X",
-        "cashed_bets": null
+        "cashed_bets": "캐시아웃된 베팅"
     }
 };
 

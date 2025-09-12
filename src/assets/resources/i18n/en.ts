@@ -240,7 +240,7 @@ export const languages = {
         "original_tagline": "Play Fresh, Win Best",
         "auto_cashout": "Auto Cashout",
         "auto_play": "Auto Play",
-        "bet_accepted": "Bet Accepted",
+        "bet_accepted": "Bet\nAccepted",
         "chip_value": "Chip Value",
         "total_bet": "Total Bet",
         "waiting_for_the_next_round": "Waiting for the next round",

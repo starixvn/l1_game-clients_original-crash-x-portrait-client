@@ -335,7 +335,7 @@ export const languages = {
     "Crash X": {
         "game_name": "Crash X",
         "game_icon_name": "Crash X",
-        "cashed_bets": "Cashed Bets"
+        "cashed_bets": "তোলা বেট"
     }
 };
 

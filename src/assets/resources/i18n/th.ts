@@ -240,7 +240,7 @@ export const languages = {
         "original_tagline": "เล่นสดใหม่ ชนะเลิศ",
         "auto_cashout": "ถอนเงินอัตโนมัติ",
         "auto_play": "เล่นอัตโนมัติ",
-        "bet_accepted": "ยอมรับการเดิมพันแล้ว",
+        "bet_accepted": "ยอมรับการเดิมพัน  \nแล้ว",
         "chip_value": "มูลค่าชิป",
         "total_bet": "เดิมพันรวม",
         "waiting_for_the_next_round": "กำลังรอรอบถัดไป",
@@ -335,7 +335,7 @@ export const languages = {
     "Crash X": {
         "game_name": "Crash X",
         "game_icon_name": "Crash X",
-        "cashed_bets": null
+        "cashed_bets": "เดิมพันที่ถอนออกแล้ว"
     }
 };
 

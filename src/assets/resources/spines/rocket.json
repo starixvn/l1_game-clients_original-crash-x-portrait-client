@@ -1,6 +1,6 @@
 {
 "skeleton": {
-	"hash": "pfdVH4u9Y9i/FcQ/LzaCvBIKOf8",
+	"hash": "pkGsJXN2Me2cZOTj3nk5IZV60RQ",
 	"spine": "3.8.99",
 	"x": -135,
 	"y": -76.05,
@@ -13,9 +13,9 @@
 	{ "name": "root" },
 	{ "name": "ship-all", "parent": "root" },
 	{ "name": "ship", "parent": "ship-all", "rotation": -0.15, "y": 3.56 },
-	{ "name": "tail", "parent": "ship-all", "rotation": -90, "y": -113.92 },
-	{ "name": "tail-center", "parent": "ship-all", "rotation": -90, "y": -83.47, "scaleX": 0.5, "scaleY": 0.3 },
-	{ "name": "tail-outside", "parent": "ship-all", "rotation": -90, "x": -1.78, "y": -117.48, "scaleY": 1.1 },
+	{ "name": "tail", "parent": "ship-all", "rotation": -90, "y": -106.9 },
+	{ "name": "tail-center", "parent": "ship-all", "rotation": -90, "y": -76.46, "scaleX": 0.5, "scaleY": 0.3 },
+	{ "name": "tail-outside", "parent": "ship-all", "rotation": -90, "y": -106.9, "scaleY": 1.1 },
 	{ "name": "vfx", "parent": "root", "scaleX": 0.9, "scaleY": 0.9 },
 	{ "name": "explode", "parent": "root", "scaleX": 1.3, "scaleY": 1.3 },
 	{ "name": "boom", "parent": "explode" },

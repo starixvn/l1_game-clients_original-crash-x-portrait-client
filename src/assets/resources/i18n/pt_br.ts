@@ -240,7 +240,7 @@ export const languages = {
         "original_tagline": "Jogue Fresco, Ganhe o Melhor",
         "auto_cashout": "SAQUE AUTOMÁTICO",
         "auto_play": "JOGADA AUTOMÁTICA",
-        "bet_accepted": "Aposta Aceita",
+        "bet_accepted": "Aposta\nAceita",
         "chip_value": "Valor da Ficha",
         "total_bet": "Aposta Total",
         "waiting_for_the_next_round": "Aguardando a próxima rodada",
@@ -335,7 +335,7 @@ export const languages = {
     "Crash X": {
         "game_name": "Crash X",
         "game_icon_name": "Crash X",
-        "cashed_bets": null
+        "cashed_bets": "Apostas Sacadas"
     }
 };
 
