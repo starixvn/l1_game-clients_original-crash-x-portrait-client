@@ -2,11 +2,13 @@ import gc from "@sg/game-client-base";
 import { _decorator, Color, Component, Label, Prefab } from "cc";
 import { reverse } from "lodash-es";
 
-import { ReachMaxWin } from "db://shared-components/game-crash/bet-history-details/scripts/reach-max-win";
 import { DynamicObject } from "@sg/game-client-base/dist/game/bet-history/bet-history-store";
 import { CrashGameBetDetailLogTable } from "db://shared-components/game-crash/bet-history-details/scripts/crash-game-bet-detail-log-table";
+import { ReachMaxWin } from "db://shared-components/game-crash/bet-history-details/scripts/reach-max-win";
+import Observer from "observer";
 const { FormatUtils } = gc;
 
+const { handle } = Observer;
 const { ccclass, property } = _decorator;
 interface IBetDetailLog {
     amount: number;
@@ -45,6 +47,15 @@ export class CrashxBetDetailTable extends CrashGameBetDetailLogTable {
             .reduce((total, betDetail) => total + Number(betDetail.amount), 0);
     }
 
+    @handle(gc.GameCrash.ProvablyFair.ProvablyFairHandler, (handle, roundId: number) => handle.openVerificationHistory(roundId))
+    onClickVerify() {
+        this.playSoundClick();
+        return this.betHistoryLog.roundId;
+    }
+
+    @handle(gc.Audios.AudioHandler, (handle) => handle.playSFX(gc.Audios.AudioIds.CLICK))
+    playSoundClick() {}
+
     showBetDetail(bodyItemPrefab: Prefab, model: gc.BetHistory.BetDetailModel) {
         const { fractionalOddsFormat, betHistoryLog } = model;
         const { result, settlementResult, odds, freeBet, betLogDetails } = betHistoryLog;
@@ -56,7 +67,7 @@ export class CrashxBetDetailTable extends CrashGameBetDetailLogTable {
         const winLoss = betHistoryLog.betwin - totalAmount;
         this.lblTotalStake.string = FormatUtils.numberWithCommas(totalAmount, 2);
         this.lblWinLoss.string = FormatUtils.numberWithCommas(winLoss, 2);
-        this.lblWin.string = FormatUtils.numberWithCommas(betHistoryLog.betwin, 2)
+        this.lblWin.string = FormatUtils.numberWithCommas(betHistoryLog.betwin, 2);
 
         if (betHistoryLog.betwin > 0) {
             this.lblWin.color = new Color().fromHEX("FFF600");
