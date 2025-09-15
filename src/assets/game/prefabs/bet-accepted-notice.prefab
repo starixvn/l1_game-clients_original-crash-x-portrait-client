@@ -139,7 +139,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 240.75,
+      "width": 205.75,
       "height": 50.4
     },
     "_anchorPoint": {
@@ -166,7 +166,7 @@
       "__id__": 6
     },
     "key": "Spaceflight.bet_accepted",
-    "format": 1,
+    "format": 3,
     "prefix": "",
     "suffix": "",
     "_id": ""
@@ -197,7 +197,7 @@
       "b": 255,
       "a": 255
     },
-    "_string": "BET ACCEPTED",
+    "_string": "Bet Accepted",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
     "_actualFontSize": 32,

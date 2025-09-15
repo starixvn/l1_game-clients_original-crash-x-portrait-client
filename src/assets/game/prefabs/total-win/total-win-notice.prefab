@@ -46,7 +46,7 @@
     "_lpos": {
       "__type__": "cc.Vec3",
       "x": 0,
-      "y": 533,
+      "y": 353,
       "z": 0
     },
     "_lrot": {
@@ -168,7 +168,7 @@
     "_lpos": {
       "__type__": "cc.Vec3",
       "x": 0,
-      "y": 29.5,
+      "y": 26,
       "z": 0
     },
     "_lrot": {
@@ -208,8 +208,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 262.7578125,
-      "height": 75.6
+      "width": 218.1484375,
+      "height": 79.6
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -244,7 +244,7 @@
       "b": 255,
       "a": 255
     },
-    "_string": "TOTAL WIN",
+    "_string": "Total Win",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
     "_actualFontSize": 48,
@@ -264,12 +264,12 @@
     "_isUnderline": false,
     "_underlineHeight": 2,
     "_cacheMode": 0,
-    "_enableOutline": false,
+    "_enableOutline": true,
     "_outlineColor": {
       "__type__": "cc.Color",
-      "r": 0,
-      "g": 0,
-      "b": 0,
+      "r": 86,
+      "g": 79,
+      "b": 41,
       "a": 255
     },
     "_outlineWidth": 2,
@@ -306,7 +306,7 @@
       "__id__": 9
     },
     "key": "Common.total_win",
-    "format": 1,
+    "format": 3,
     "prefix": "",
     "suffix": "",
     "_id": ""
@@ -426,7 +426,7 @@
     "_lpos": {
       "__type__": "cc.Vec3",
       "x": 0,
-      "y": -45.3,
+      "y": -43.8,
       "z": 0
     },
     "_lrot": {
@@ -588,7 +588,7 @@
     "_lpos": {
       "__type__": "cc.Vec3",
       "x": 0,
-      "y": -74.80000000000001,
+      "y": -76.80000000000001,
       "z": 0
     },
     "_lrot": {
@@ -741,7 +741,7 @@
     "_contentSize": {
       "__type__": "cc.Size",
       "width": 464,
-      "height": 144.6
+      "height": 141.6
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -815,7 +815,7 @@
     "_paddingTop": 5,
     "_paddingBottom": 5,
     "_spacingX": 0,
-    "_spacingY": 15,
+    "_spacingY": 8,
     "_verticalDirection": 1,
     "_horizontalDirection": 0,
     "_constraint": 0,
