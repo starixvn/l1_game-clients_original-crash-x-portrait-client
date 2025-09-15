@@ -3,7 +3,9 @@ function buildShareResource(configs) {
     return buildUrl("http", path, configs);
 }
 
-function buildUrl(protocol = "http", path = "/", configs) {
+function buildUrl(protocol, path, configs) {
+    protocol = protocol || "http";
+    path = path || "/";
     const ssl = configs.ssl;
     const domain = getRootDomain(configs);
     const subDomain = configs.clientSubDomain ?? configs.subDomain;
@@ -32,8 +34,7 @@ async function getMapping(configPath) {
         const shareResourceUrl = buildShareResource(globalThis.envConfig);
         const localeMappingUrl = `${shareResourceUrl}/${configPath}`;
         const response = await fetch(localeMappingUrl);
-        const data = await response.json();
-        return data;
+        return await response.json();
     } catch (error) {
         return {};
     }
