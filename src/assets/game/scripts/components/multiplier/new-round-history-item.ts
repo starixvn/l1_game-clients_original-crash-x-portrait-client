@@ -20,6 +20,19 @@ export default class NewRoundHistoryItem extends RoundHistoryItem {
     @property(Sprite)
     nodeCircle: Sprite = null;
 
+    hideAllNodes() {
+        this.displayMultiplier(false);
+        this.displayInPlay(false);
+    }
+
+    @render(gc.Rounds.RoundTimeStore, (store) => store.roundTime)
+    renderRoundTime(roundTime: number) {
+        if (!this.isCrashed() && roundTime <= this.START_BET_TIMER) {
+            this.hideAllNodes();
+            this.displayInPlay(true);
+        }
+    }
+
     protected updateMultiplierDisplay(multiplier: number) {
         const index = CrashUtils.getMultiplierIndex(multiplier);
         const colorName = CrashUtils.getMultiplierColorName(index);
