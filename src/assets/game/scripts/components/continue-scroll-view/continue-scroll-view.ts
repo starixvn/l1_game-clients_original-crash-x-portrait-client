@@ -9,11 +9,11 @@ export class ContinueScrollView extends ScrollView {
     private outSideScrollView: ScrollView = null;
 
     onLoad(): void {
-        if (!this.outSideScrollViewPath) {
-            console.error("outSideScrollViewPath is not set");
+        this.outSideScrollView = find(this.outSideScrollViewPath)?.getComponent(ScrollView);
+        if (!this.outSideScrollView) {
+            console.error("outSideScrollView is not found");
             return;
         }
-        this.outSideScrollView = find(this.outSideScrollViewPath).getComponent(ScrollView);
         this.node.on(ScrollView.EventType.SCROLLING, this.onScrolling, this);
     }
 

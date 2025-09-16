@@ -1022,7 +1022,7 @@
     "_verticalScrollBar": {
       "__id__": 43
     },
-    "outSideScrollViewPath": "Canvas/full/wrap/content/scroll",
+    "outSideScrollViewPath": "Canvas/full/content/scroll",
     "_id": ""
   },
   {
@@ -1421,7 +1421,6 @@
     },
     "fileId": "8aGeK0uelOoLQ3dtbf8tGO",
     "instance": null,
-    "targetOverrides": null,
     "nestedPrefabInstanceRoots": [
       {
         "__id__": 48
