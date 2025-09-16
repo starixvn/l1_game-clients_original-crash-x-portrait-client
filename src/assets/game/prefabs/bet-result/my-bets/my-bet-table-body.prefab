@@ -40,9 +40,6 @@
         "__id__": 64
       },
       {
-        "__id__": 45
-      },
-      {
         "__id__": 66
       },
       {
@@ -50,10 +47,16 @@
       },
       {
         "__id__": 70
+      },
+      {
+        "__id__": 72
+      },
+      {
+        "__id__": 45
       }
     ],
     "_prefab": {
-      "__id__": 72
+      "__id__": 74
     },
     "_lpos": {
       "__type__": "cc.Vec3",
@@ -155,7 +158,7 @@
     "_contentSize": {
       "__type__": "cc.Size",
       "width": 100,
-      "height": 1704
+      "height": 1344
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -372,7 +375,7 @@
     "_lpos": {
       "__type__": "cc.Vec3",
       "x": 0,
-      "y": 0,
+      "y": 660.5,
       "z": 0
     },
     "_lrot": {
@@ -412,7 +415,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 786.0000000000001,
+      "width": 785.9999999999999,
       "height": 525
     },
     "_anchorPoint": {
@@ -527,8 +530,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 786.0000000000001,
-      "height": 1681
+      "width": 785.9999999999999,
+      "height": 1321
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -693,7 +696,7 @@
     },
     "_lpos": {
       "__type__": "cc.Vec3",
-      "x": 393.00000000000006,
+      "x": 392.99999999999994,
       "y": 12,
       "z": 0
     },
@@ -871,7 +874,7 @@
     "_contentSize": {
       "__type__": "cc.Size",
       "width": 8,
-      "height": 1680
+      "height": 1320
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -985,7 +988,7 @@
     },
     "_direction": 1,
     "_enableAutoHide": true,
-    "_autoHideTime": 1,
+    "_autoHideTime": 0.5,
     "_id": ""
   },
   {
@@ -993,7 +996,7 @@
     "fileId": "11lHFT5/BLcaPNrhuYNy6I"
   },
   {
-    "__type__": "cc.ScrollView",
+    "__type__": "1d2467Et/RAlpQZWU/0l+m9",
     "_name": "",
     "_objFlags": 0,
     "__editorExtras__": {},
@@ -1004,10 +1007,10 @@
     "__prefab": {
       "__id__": 46
     },
-    "bounceDuration": 0.23,
-    "brake": 0.75,
+    "bounceDuration": 0.1,
+    "brake": 0.5,
     "elastic": true,
-    "inertia": true,
+    "inertia": false,
     "horizontal": false,
     "vertical": true,
     "cancelInnerEvents": true,
@@ -1019,11 +1022,12 @@
     "_verticalScrollBar": {
       "__id__": 43
     },
+    "outSideScrollViewPath": "Canvas/full/wrap/content/scroll",
     "_id": ""
   },
   {
     "__type__": "cc.CompPrefabInfo",
-    "fileId": "1fuNk3TtpGOZFc8zU6kBS7"
+    "fileId": "622k5T4LBGDpCTBctI1xrE"
   },
   {
     "__type__": "cc.PrefabInfo",
@@ -1230,8 +1234,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 786.0000000000001,
-      "height": 1704
+      "width": 785.9999999999999,
+      "height": 1344
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -1287,6 +1291,39 @@
     "fileId": "a6ss+SZalDh73CJz4shDZN"
   },
   {
+    "__type__": "cc.ScrollView",
+    "_name": "",
+    "_objFlags": 0,
+    "__editorExtras__": {},
+    "node": {
+      "__id__": 1
+    },
+    "_enabled": false,
+    "__prefab": {
+      "__id__": 67
+    },
+    "bounceDuration": 0.23,
+    "brake": 0.75,
+    "elastic": true,
+    "inertia": true,
+    "horizontal": false,
+    "vertical": true,
+    "cancelInnerEvents": true,
+    "scrollEvents": [],
+    "_content": {
+      "__id__": 13
+    },
+    "_horizontalScrollBar": null,
+    "_verticalScrollBar": {
+      "__id__": 43
+    },
+    "_id": ""
+  },
+  {
+    "__type__": "cc.CompPrefabInfo",
+    "fileId": "1fuNk3TtpGOZFc8zU6kBS7"
+  },
+  {
     "__type__": "cc.Widget",
     "_name": "",
     "_objFlags": 0,
@@ -1296,7 +1333,7 @@
     },
     "_enabled": true,
     "__prefab": {
-      "__id__": 67
+      "__id__": 69
     },
     "_alignFlags": 45,
     "_target": null,
@@ -1332,7 +1369,7 @@
     },
     "_enabled": true,
     "__prefab": {
-      "__id__": 69
+      "__id__": 71
     },
     "content": {
       "__id__": 13
@@ -1360,7 +1397,7 @@
     },
     "_enabled": true,
     "__prefab": {
-      "__id__": 71
+      "__id__": 73
     },
     "container": {
       "__id__": 13
