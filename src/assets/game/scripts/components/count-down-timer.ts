@@ -1,5 +1,5 @@
 import gc from "@sg/game-client-base";
-import { _decorator, Label, Sprite, tween } from "cc";
+import { _decorator, Label, Sprite, tween, Color } from "cc";
 import Observer from "observer";
 
 import { ObserverComponent } from "db://shared-components/shared/common-components/observer-component/scripts/observer-component";
@@ -35,6 +35,13 @@ export class CountDownTimer extends ObserverComponent {
     renderRoundTime(roundTime: number) {
         const roundTimeStr = roundTime.toString();
         this.lblCountdown.string = `${roundTimeStr}s`;
+
+
+        if (roundTime <= 3 && roundTime > 0) {
+            this.lblCountdown.color = new Color().fromHEX('#FF0000');
+        } else {
+            this.lblCountdown.color = new Color().fromHEX('#8EFF77');
+        }
 
         if (this._totalTime === 0) {
             this.resetBar(10);

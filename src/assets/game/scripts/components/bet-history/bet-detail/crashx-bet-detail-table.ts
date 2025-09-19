@@ -75,6 +75,8 @@ export class CrashxBetDetailTable extends CrashGameBetDetailLogTable {
         }
 
         reversedLogs.forEach((betDetailsLog, index) => {
+            const actionName = betDetailsLog.action.toString();
+            if (actionName !== gc.GameClientEmitMessage.Bet.eventName.toString()) {
             this.body.addChild(
                 this.buildBodyRow(bodyItemPrefab, {
                     betDetailsLog,
@@ -84,8 +86,9 @@ export class CrashxBetDetailTable extends CrashGameBetDetailLogTable {
                     result,
                     freeBet,
                     fractionalOddsFormat,
-                })
-            );
+                    })
+                );
+            }
         });
     }
 }

@@ -33,13 +33,13 @@ export class CrashxBetDetailItem extends BaseBetDetailLogItem {
         this.nodeBackground.active = data.index % 2 === 0;
         this.lblTime.string = CrashUtils.formatTime(time);
         this.lblBet.string = FormatUtils.numberWithCommas(amount, 2);
-        this.lblMultiplier.string = multiplier ? `${FormatUtils.numberWithCommas(multiplier, 2, false)}x` : "";
+        this.lblMultiplier.string = multiplier ? `${FormatUtils.numberWithCommas(multiplier, 2, false)}x` : "-";
         this.lblWin.string = FormatUtils.numberWithCommas(winAmount, 2);
         this.setHighlightTicketDetail(winAmount > 0);
     }
 
     setHighlightTicketDetail(highlight: boolean) {
-        const color = highlight ? Color.YELLOW : Color.WHITE;
+        const color = highlight ? Color.YELLOW : new Color().fromHEX('#B3BEC1');
         this.lblWin.color = color;
     }
 }
