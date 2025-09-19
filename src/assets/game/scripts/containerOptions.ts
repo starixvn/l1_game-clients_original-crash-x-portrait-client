@@ -1,5 +1,6 @@
 import gc from "@sg/game-client-base";
 import { LogStore } from "db://shared-components/game/scripts/stores/log-store";
+import * as Volume from "db://shared-components/shared/common-components/volume/handlers";
 import { sharedContainer } from "../../scripts/shared-container";
 import { settings } from "./game-settings";
 import { TopResultClient } from "./handlers/api-client/top-result-client";
@@ -11,7 +12,6 @@ import { CrashBetListHandlers } from "./handlers/override/crash-bet-list-handler
 import { CrashCashOutHandlers } from "./handlers/override/crash-cash-out-handlers";
 import { GameCrashUserSettingHandlerV2 } from "./handlers/override/crash-game-user-setting-handler-v2";
 import { PlayerActionHandlers } from "./handlers/override/player-action-handlers";
-
 
 export const containerOptions: gc.IContainerOptions = {
     globalContainer: sharedContainer,
@@ -28,5 +28,5 @@ export const containerOptions: gc.IContainerOptions = {
         container.bind(gc.GameCrash.CrashGameUserSetting.GameCrashUserSettingHandler).to(GameCrashUserSettingHandlerV2);
         container.bind(TopResultClient).to(TopResultClient);
     },
-    features: [CrashGameV2, gc.GameCrash, ...gc.defaultFeatures],
+    features: [CrashGameV2, Volume, gc.GameCrash, ...gc.defaultFeatures],
 };

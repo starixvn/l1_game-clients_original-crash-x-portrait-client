@@ -12,3 +12,4 @@ export * as pt_br from "./pt_br";
 export * as ko from "./ko";
 export * as bn_bd from "./bn_bd";
 export * as hi_in from "./hi_in";
+export * as ms_my from "./ms_my";

@@ -4,7 +4,7 @@ export const settings = {
     id: 144,
     name: GAME_NAME,
     observerNamespace: GAME_NAME,
-    namespaces: ["Crash X","RocketX", "Spaceflight"],
+    namespaces: ["Crash X","RocketX", "Spaceflight","ui"],
     durations: {
         wholeRound: 14,
         lockingBet: 3,
