@@ -1,6 +1,5 @@
 import gc from "@sg/game-client-base";
 import { LogStore } from "db://shared-components/game/scripts/stores/log-store";
-import * as Volume from "db://shared-components/shared/common-components/volume/handlers";
 import { sharedContainer } from "../../scripts/shared-container";
 import { settings } from "./game-settings";
 import { TopResultClient } from "./handlers/api-client/top-result-client";
@@ -28,5 +27,5 @@ export const containerOptions: gc.IContainerOptions = {
         container.bind(gc.GameCrash.CrashGameUserSetting.GameCrashUserSettingHandler).to(GameCrashUserSettingHandlerV2);
         container.bind(TopResultClient).to(TopResultClient);
     },
-    features: [CrashGameV2, Volume, gc.GameCrash, ...gc.defaultFeatures],
+    features: [CrashGameV2, gc.GameCrash, ...gc.defaultFeatures],
 };
