@@ -44,7 +44,6 @@ export class CrashxBetDetailItem extends BaseBetDetailLogItem {
         if (isRefund) {
             this.lblRefund.node.active = true;
             this.lblMultiplier.node.active = false;
-            return;
         }
 
     }

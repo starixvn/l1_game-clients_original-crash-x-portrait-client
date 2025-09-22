@@ -874,8 +874,8 @@
     },
     "_lpos": {
       "__type__": "cc.Vec3",
-      "x": 249.4987699653616,
-      "y": 440.81470355905776,
+      "x": 260.0967335053752,
+      "y": 441.3004098643446,
       "z": 0
     },
     "_lrot": {
@@ -887,8 +887,8 @@
     },
     "_lscale": {
       "__type__": "cc.Vec3",
-      "x": 1,
-      "y": 1,
+      "x": 0.8,
+      "y": 0.8,
       "z": 1
     },
     "_mobility": 0,
@@ -1077,8 +1077,8 @@
     "_alignFlags": 33,
     "_target": null,
     "_left": 0,
-    "_right": 23.64796354001362,
-    "_top": 13.535706305286851,
+    "_right": 12,
+    "_top": 12,
     "_bottom": 0,
     "_horizontalCenter": 0,
     "_verticalCenter": 0,
@@ -1473,7 +1473,7 @@
       "a": 255
     },
     "_spriteFrame": {
-      "__uuid__": "bd769873-bebd-49ab-81f8-f23dd6c9c61f@1cbb3",
+      "__uuid__": "633480e4-5419-4fba-8e2d-8d22327e7088@2ba7a",
       "__expectedType__": "cc.SpriteFrame"
     },
     "_type": 1,
@@ -1489,7 +1489,7 @@
     "_isTrimmedMode": true,
     "_useGrayscale": false,
     "_atlas": {
-      "__uuid__": "bd769873-bebd-49ab-81f8-f23dd6c9c61f",
+      "__uuid__": "633480e4-5419-4fba-8e2d-8d22327e7088",
       "__expectedType__": "cc.SpriteAtlas"
     },
     "_id": ""
