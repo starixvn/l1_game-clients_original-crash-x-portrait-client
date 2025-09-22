@@ -71,7 +71,7 @@ export class BetHistoryRocketXTableBody extends ObserverComponent {
         tooltipButton.node.active = false;
     }
 
-    @handle(BetHistoryRocketXHandlers.BetHistoryRocketXCallServiceHandler, (handler, pageNumber: number) =>
+    @handle(BetHistoryRocketXHandlers.BetHistoryHandlers, (handler, pageNumber: number) =>
         handler.getHistory(pageNumber, HistoryConstants.pageSizeHistory, HistoryConstants.history)
     )
     private fetchData(): number {

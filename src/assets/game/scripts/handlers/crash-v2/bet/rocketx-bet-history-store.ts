@@ -64,9 +64,14 @@ export class MyBetStore {
     }
 
     myBetModel: MyBetModel = null;
+    settleStatus: { win: boolean; bet: number } = null;
 
     setData(myBetModel: MyBetModel) {
         myBetModel.fractionalOddsFormat = this.mainPlayerStore?.fractionalOddsFormat;
         this.myBetModel = myBetModel;
+    }
+
+    setSettleStatus(settleStatus: { win: boolean; bet: number }) {
+        this.settleStatus = settleStatus;
     }
 }

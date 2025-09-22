@@ -31,6 +31,8 @@ export class MyBetTableBody extends ObserverComponent {
     private currentIndex = 0;
     private isFetchingData = false;
     private isNodataToFetch = false;
+    private lastScrollTopTime = 0;
+    private readonly scrollTopThreshold: number = 1000; // 1 second threshold
 
     private getHistoryItemComponent(node: Node): BetResultHistoryBodyItem {
         return node.getComponent(BetResultHistoryBodyItem);
@@ -76,8 +78,8 @@ export class MyBetTableBody extends ObserverComponent {
         tooltipButton.node.active = false;
     }
 
-    @handle(BetHistoryRocketXHandlers.BetHistoryRocketXCallServiceHandler, (handler, pageNumber: number) =>
-        handler.getMyHistory(pageNumber, HistoryConstants.pageSizeMyHistory, HistoryConstants.mybet)
+    @handle(BetHistoryRocketXHandlers.BetHistoryHandlers, (handler, pageNumber: number) =>
+        handler.getHistory(pageNumber, HistoryConstants.pageSizeMyHistory, HistoryConstants.mybet)
     )
     private fetchData(): number {
         return this.currentPageIndex;
@@ -86,6 +88,13 @@ export class MyBetTableBody extends ObserverComponent {
     @render(MyBetStore, (store) => store.myBetModel, { fireImmediately: false })
     private showMyBet(myBetModel: MyBetModel): void {
         this.renderData(myBetModel);
+    }
+
+    @render(MyBetStore, (store) => store.settleStatus, { fireImmediately: false })
+    private showSettleStatus(settleStatus: { win: boolean; bet: number }): void {
+        if (this.node.getComponent(ScrollView)?.getScrollOffset().y <= 0) {
+            this.fetchDataFirstPage();
+        }
     }
 
     private renderData(myBetModel: MyBetModel): void {
@@ -105,7 +114,6 @@ export class MyBetTableBody extends ObserverComponent {
     }
 
     private processBetHistory(betHistoryLog: gc.BetHistory.BetHistoryLog, rowIndex: number): void {
-        console.log("betHistoryLog", betHistoryLog.betwin, betHistoryLog.roundId);
         const item = this.buildBodyRow(this.itemPrefab, betHistoryLog, rowIndex, Number(betHistoryLog.betwin));
         this.content.addChild(item);
         const currentPosition = item.getPosition();
@@ -145,6 +153,7 @@ export class MyBetTableBody extends ObserverComponent {
 
     private setupScrollListener() {
         this.node.on(ScrollView.EventType.SCROLL_TO_BOTTOM, this.onScrolling, this);
+        this.node.on(ScrollView.EventType.SCROLL_TO_TOP, this.onScrollingTop, this);
     }
 
     private onScrolling() {
@@ -155,9 +164,28 @@ export class MyBetTableBody extends ObserverComponent {
         }
     }
 
+    private onScrollingTop() {
+        const currentTime = Date.now();
+        if (!this.isFetchingData && currentTime - this.lastScrollTopTime >= this.scrollTopThreshold) {
+            this.fetchDataFirstPage();
+        }
+    }
+
+    private fetchDataFirstPage() {
+        const currentTime = Date.now();
+        this.currentPageIndex = 1;
+        this.currentIndex = 0;
+        this.isFetchingData = true;
+        this.isNodataToFetch = false;
+        this.content.removeAllChildren();
+        this.fetchData();
+        this.lastScrollTopTime = currentTime;
+    }
+
     onDestroy() {
         if (this.node) {
             this.node.off(ScrollView.EventType.SCROLL_TO_BOTTOM, this.onScrolling, this);
+            this.node.off(ScrollView.EventType.SCROLL_TO_TOP, this.onScrollingTop, this);
         }
     }
 }
