@@ -562,7 +562,7 @@ export const languages = {
         "scoreboard_even": "E",
         "tooltip_double": "Double",
         "tooltip_sound": "Sound",
-        "tooltip_guide": "Game Guides",
+        "tooltip_guide": "Panduan Permainan",
         "tooltip_fairness": "Fairness",
         "lock_bet": "Waiting for the result",
         "tooltip_stat": "View stat",
