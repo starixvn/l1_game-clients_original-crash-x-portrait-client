@@ -25,9 +25,12 @@ export class CrashxBetDetailItem extends BaseBetDetailLogItem {
     @property(Label)
     lblBet: Label = null;
 
+    @property(Label)
+    lblRefund: Label = null;
+
     setData(data: BetDetailLogItemType) {
 
-        const { amount, multiplier, winAmount, time } = data.betDetailsLog as CrashGameBetDetailsLog &
+        const { amount, multiplier, winAmount, time, action } = data.betDetailsLog as CrashGameBetDetailsLog &
             gc.BetHistory.DynamicObject<object>;
 
         this.nodeBackground.active = data.index % 2 === 0;
@@ -36,6 +39,14 @@ export class CrashxBetDetailItem extends BaseBetDetailLogItem {
         this.lblMultiplier.string = multiplier ? `${FormatUtils.numberWithCommas(multiplier, 2, false)}x` : "-";
         this.lblWin.string = FormatUtils.numberWithCommas(winAmount, 2);
         this.setHighlightTicketDetail(winAmount > 0);
+
+        const isRefund = action === CrashUtils.betEventNames.refund;
+        if (isRefund) {
+            this.lblRefund.node.active = true;
+            this.lblMultiplier.node.active = false;
+            return;
+        }
+
     }
 
     setHighlightTicketDetail(highlight: boolean) {
