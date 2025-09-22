@@ -163,7 +163,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 786.0000000000001,
+      "width": 786,
       "height": 1344.0000000000002
     },
     "_anchorPoint": {
@@ -226,7 +226,7 @@
       "__id__": 8
     },
     "bundleName": "resources",
-    "path": "prefabs/notice-container-direct",
+    "path": "prefabs/notice-container",
     "_id": ""
   },
   {
@@ -2329,7 +2329,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 786.0000000000001,
+      "width": 786,
       "height": 1344.0000000000002
     },
     "_anchorPoint": {
@@ -2429,7 +2429,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 786.0000000000001,
+      "width": 786,
       "height": 1344.0000000000002
     },
     "_anchorPoint": {
