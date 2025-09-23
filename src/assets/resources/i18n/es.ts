@@ -240,7 +240,7 @@ export const languages = {
         "original_tagline": "Juega Fresco, Gana Mejor",
         "auto_cashout": "Auto Retiro",
         "auto_play": "Juego Automático",
-        "bet_accepted": "Apuesta Aceptada",
+        "bet_accepted": "Apuesta\nAceptada",
         "chip_value": "Valor de la ficha",
         "total_bet": "Apuesta Total",
         "waiting_for_the_next_round": "Esperando la siguiente ronda",
@@ -253,7 +253,7 @@ export const languages = {
         "message_bet_is_accepted": "Apuesta aceptada",
         "message_total_cashout_reach_max": "Los importes totales de los cobros alcanzan el máximo de ganancias",
         "my_bets": "Mis apuestas",
-        "waiting": "Esperando...",
+        "waiting": "Esperando",
         "bet_slip": "Boleto de Apuestas",
         "game": "juego",
         "auto_rebet": "Apuesta automática de nuevo",
@@ -265,8 +265,25 @@ export const languages = {
         "tooltip_guide": "Guías de Juego",
         "tooltip_fairness": "Equidad",
         "lock_bet": "Esperando resultado",
-        "tooltip_stat": "View stat",
-        "tooltip_auto": "Auto"
+        "tooltip_stat": "Ver estadísticas",
+        "tooltip_auto": "Automático",
+        "crash_next_round": "(Próxima Ronda)",
+        "start_auto_bet": "Iniciar Apuesta Automática",
+        "number_of_bet": "Número de Apuestas",
+        "on_win": "Al ganar",
+        "on_loss": "En caso de pérdida",
+        "reset": "Reiniciar",
+        "increase_by": "Aumentar en",
+        "stop_on_win": "Parar al ganar",
+        "stop_on_loss": "Parar al perder",
+        "manual": "Manual",
+        "auto": "Automático",
+        "live_stats": "Estadísticas en vivo",
+        "profit": "Beneficio",
+        "wins": "Ganancias",
+        "waggred": "Waggred",
+        "losses": "Pérdidas",
+        "all_bets": "Todas"
     },
     "Spaceflight": {
         "auto_cashout": "Auto Retiro",
@@ -336,7 +353,7 @@ export const languages = {
     "Crash X": {
         "game_name": "Crash X",
         "game_icon_name": "Crash X",
-        "cashed_bets": "Cashed Bets"
+        "cashed_bets": "Apuestas cobradas"
     },
     "ui": {
         "choice_red2": "2 Rojos",

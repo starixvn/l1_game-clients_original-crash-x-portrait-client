@@ -5910,7 +5910,7 @@
     "_lpos": {
       "__type__": "cc.Vec3",
       "x": 135.379,
-      "y": -117,
+      "y": -126,
       "z": 0
     },
     "_lrot": {
@@ -6004,7 +6004,7 @@
     "_contentSize": {
       "__type__": "cc.Size",
       "width": 138.853515625,
-      "height": 50.4
+      "height": 37.8
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -6045,7 +6045,7 @@
     "_actualFontSize": 22,
     "_fontSize": 22,
     "_fontFamily": "Arial",
-    "_lineHeight": 40,
+    "_lineHeight": 30,
     "_overflow": 0,
     "_enableWrapText": true,
     "_font": {
@@ -6100,7 +6100,7 @@
     "__prefab": {
       "__id__": 257
     },
-    "key": "Spaceflight.auto_cashout",
+    "key": "Common.auto_cashout",
     "format": 3,
     "prefix": "",
     "suffix": "",
@@ -6511,7 +6511,7 @@
     "_contentSize": {
       "__type__": "cc.Size",
       "width": 220.853515625,
-      "height": 40
+      "height": 92
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -6702,7 +6702,7 @@
     "_target": null,
     "_left": 0,
     "_right": 0,
-    "_top": 272,
+    "_top": 255,
     "_bottom": 0,
     "_horizontalCenter": 0,
     "_verticalCenter": 0,
@@ -6778,7 +6778,7 @@
     "_lpos": {
       "__type__": "cc.Vec3",
       "x": -355,
-      "y": -117,
+      "y": -126,
       "z": 0
     },
     "_lrot": {
@@ -6830,7 +6830,7 @@
     },
     "_lpos": {
       "__type__": "cc.Vec3",
-      "x": 50.28955078125,
+      "x": 48.32373046875,
       "y": 0,
       "z": 0
     },
@@ -6871,8 +6871,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 100.5791015625,
-      "height": 50.4
+      "width": 96.6474609375,
+      "height": 37.8
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -6907,13 +6907,13 @@
       "b": 255,
       "a": 255
     },
-    "_string": "Auto-Play",
+    "_string": "Auto Play",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
     "_actualFontSize": 22,
     "_fontSize": 22,
     "_fontFamily": "Arial",
-    "_lineHeight": 40,
+    "_lineHeight": 30,
     "_overflow": 0,
     "_enableWrapText": true,
     "_font": {
@@ -6968,7 +6968,7 @@
     "__prefab": {
       "__id__": 296
     },
-    "key": "Spaceflight.auto_play",
+    "key": "Common.auto_play",
     "format": 3,
     "prefix": "",
     "suffix": "",
@@ -7018,7 +7018,7 @@
     },
     "_lpos": {
       "__type__": "cc.Vec3",
-      "x": 143.5791015625,
+      "x": 139.6474609375,
       "y": 0,
       "z": 0
     },
@@ -7378,7 +7378,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 176.5791015625,
+      "width": 172.6474609375,
       "height": 40
     },
     "_anchorPoint": {
@@ -7570,7 +7570,7 @@
     "_target": null,
     "_left": 0,
     "_right": 0,
-    "_top": 272,
+    "_top": 281,
     "_bottom": 0,
     "_horizontalCenter": 0,
     "_verticalCenter": 0,
@@ -8342,7 +8342,7 @@
     "__prefab": {
       "__id__": 354
     },
-    "key": "Spaceflight.place_bet",
+    "key": "ui.place_bet_break",
     "format": 1,
     "prefix": "",
     "suffix": "",
@@ -9861,7 +9861,7 @@
     "__prefab": {
       "__id__": 424
     },
-    "key": "Spaceflight.cashout",
+    "key": "Common.cashout",
     "format": 1,
     "prefix": "",
     "suffix": "",
@@ -10807,7 +10807,7 @@
     "__prefab": {
       "__id__": 464
     },
-    "key": "Spaceflight.place_bet",
+    "key": "ui.place_bet_break",
     "format": 1,
     "prefix": "",
     "suffix": "",
@@ -11180,7 +11180,7 @@
     "__prefab": {
       "__id__": 480
     },
-    "key": "Spaceflight.next_round",
+    "key": "Common.crash_next_round",
     "format": 0,
     "prefix": "",
     "suffix": "",
@@ -11721,7 +11721,7 @@
     "__prefab": {
       "__id__": 504
     },
-    "key": "Spaceflight.waiting",
+    "key": "Common.waiting",
     "format": 1,
     "prefix": "",
     "suffix": "",
@@ -11908,7 +11908,7 @@
     "__prefab": {
       "__id__": 512
     },
-    "key": "Spaceflight.cancel_bet",
+    "key": "Common.cancel_bet",
     "format": 0,
     "prefix": "",
     "suffix": "",
