@@ -1,9 +1,8 @@
 import gc from "@sg/game-client-base";
-import { _decorator, Label, Sprite, tween, Color } from "cc";
+import { _decorator, Color, Label, Sprite, tween } from "cc";
 import Observer from "observer";
 
 import { ObserverComponent } from "db://shared-components/shared/common-components/observer-component/scripts/observer-component";
-
 
 const { ccclass, property } = _decorator;
 const { render, handle } = Observer;
@@ -33,32 +32,35 @@ export class CountDownTimer extends ObserverComponent {
 
     @render(gc.Rounds.RoundTimeStore, (store) => store.roundTime)
     renderRoundTime(roundTime: number) {
-        const roundTimeStr = roundTime.toString();
-        this.lblCountdown.string = `${roundTimeStr}s`;
-
+        this.lblCountdown.string = gc.Translator.commonTranslate("start_in", { time: roundTime });
 
         if (roundTime <= 3 && roundTime > 0) {
-            this.lblCountdown.color = new Color().fromHEX('#FF0000');
+            this.lblCountdown.color = new Color().fromHEX("#FF0000");
         } else {
-            this.lblCountdown.color = new Color().fromHEX('#8EFF77');
+            this.lblCountdown.color = new Color().fromHEX("#8EFF77");
         }
 
         if (this._totalTime === 0) {
             this.resetBar(10);
         }
 
-        const targetProgress  = roundTime / this._totalTime;
+        const targetProgress = roundTime / this._totalTime;
         if (this._barTween) {
             this._barTween.stop();
             this._barTween = null;
         }
-        const holder = { value: this.countdownBar.fillRange };
+
+        const holder = { value: this.countdownBar?.fillRange };
         this._barTween = tween(holder)
-            .to(1, { value: targetProgress }, {
-                onUpdate: () => {
-                    this.countdownBar.fillRange = holder.value;
+            .to(
+                1,
+                { value: targetProgress },
+                {
+                    onUpdate: () => {
+                        this.countdownBar && (this.countdownBar.fillRange = holder.value);
+                    },
                 }
-            })
+            )
             .start();
     }
 

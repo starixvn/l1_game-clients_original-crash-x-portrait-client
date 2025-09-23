@@ -238,7 +238,7 @@ export const languages = {
         "bet_detail_note": "বর্তমান তারিখ থেকে গত ৭ দিনের মধ্যে ডেটা পাওয়া যায়।",
         "players": "Player",
         "original_tagline": "সতেজ খেলুন, সেরা জিতুন",
-        "auto_cashout": "স্বয়ংক্রিয় ক্যাশআউট",
+        "auto_cashout": "স্বয়ংক্রিয়\nক্যাশআউট",
         "auto_play": "অটো প্লে",
         "bet_accepted": "বাজি গৃহীত হয়েছে",
         "chip_value": "চিপ মূল্য",

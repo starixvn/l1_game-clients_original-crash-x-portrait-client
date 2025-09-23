@@ -238,7 +238,7 @@ export const languages = {
         "bet_detail_note": "Os dados estão disponíveis apenas para os últimos 7 dias a partir da data atual.",
         "players": "Jogadores",
         "original_tagline": "Jogue Fresco, Ganhe o Melhor",
-        "auto_cashout": "Saque Automático",
+        "auto_cashout": "Saque \nAutomático",
         "auto_play": "JOGADA AUTOMÁTICA",
         "bet_accepted": "Aposta\nAceita",
         "chip_value": "Valor da Ficha",
