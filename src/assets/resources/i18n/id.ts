@@ -283,7 +283,12 @@ export const languages = {
         "wins": "MENANG",
         "waggred": "Waggred",
         "losses": "Kerugian",
-        "all_bets": "Semua Taruhan"
+        "all_bets": "Semua Taruhan",
+        "crash_glossary_refund": "Pengembalian dana",
+        "glossary_bet": "Taruhan",
+        "glossary_crash_point": "Titik jatuh",
+        "glossary_message_reach_max_win": "Raih Kemenangan Maksimal",
+        "title_multiplier": "Pengali"
     },
     "Spaceflight": {
         "auto_cashout": "CASHOUT OTOMATIS",

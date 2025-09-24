@@ -283,7 +283,12 @@ export const languages = {
         "wins": "ชนะ",
         "waggred": "Waggred",
         "losses": "การสูญเสีย",
-        "all_bets": "การเดิมพันทั้งหมด"
+        "all_bets": "การเดิมพันทั้งหมด",
+        "crash_glossary_refund": "คืนเงิน",
+        "glossary_bet": "เดิมพัน",
+        "glossary_crash_point": "แต้มการพังของจรวด",
+        "glossary_message_reach_max_win": "ไปให้ถึงการชนะสูงสุด",
+        "title_multiplier": "ตัวคูณ"
     },
     "Spaceflight": {
         "auto_cashout": "ถอนเงินอัตโนมัติ",

@@ -283,7 +283,12 @@ export const languages = {
         "wins": "Galibiyetler",
         "waggred": "Waggred",
         "losses": "Kayıplar",
-        "all_bets": "Tüm Bahisler"
+        "all_bets": "Tüm Bahisler",
+        "crash_glossary_refund": "Geri Ödeme",
+        "glossary_bet": "Bahis",
+        "glossary_crash_point": "Çöküş Noktası",
+        "glossary_message_reach_max_win": "Maksimum Kazanca Ulaşın",
+        "title_multiplier": "Çarpan"
     },
     "Spaceflight": {
         "game_name": "Uzay Uçuşu",

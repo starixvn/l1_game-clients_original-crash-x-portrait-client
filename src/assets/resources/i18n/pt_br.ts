@@ -283,7 +283,12 @@ export const languages = {
         "wins": "Vitórias",
         "waggred": "Waggred",
         "losses": "Perdas",
-        "all_bets": "Todas as Apostas"
+        "all_bets": "Todas as Apostas",
+        "crash_glossary_refund": "Reembolso",
+        "glossary_bet": "Aposta",
+        "glossary_crash_point": "Ponto de Crash",
+        "glossary_message_reach_max_win": "Atingir o Ganho Máximo",
+        "title_multiplier": "Multiplicador"
     },
     "Spaceflight": {
         "game_name": "Voo Espacial",

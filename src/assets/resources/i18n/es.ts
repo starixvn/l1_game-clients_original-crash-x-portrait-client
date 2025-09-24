@@ -283,7 +283,12 @@ export const languages = {
         "wins": "Ganancias",
         "waggred": "Waggred",
         "losses": "Pérdidas",
-        "all_bets": "Todas"
+        "all_bets": "Todas",
+        "crash_glossary_refund": "Reembolso",
+        "glossary_bet": "Apuesta",
+        "glossary_crash_point": "Punto de colisión",
+        "glossary_message_reach_max_win": "Alcanzar la Ganancia Máxima",
+        "title_multiplier": "Multiplicador"
     },
     "Spaceflight": {
         "auto_cashout": "Auto Retiro",

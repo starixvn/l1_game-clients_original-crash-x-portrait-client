@@ -283,7 +283,12 @@ export const languages = {
         "wins": "Thắng",
         "waggred": "Đã cược",
         "losses": "Thua",
-        "all_bets": "Tất Cả Cược"
+        "all_bets": "Tất Cả Cược",
+        "crash_glossary_refund": "Hoàn Tiền",
+        "glossary_bet": "Cược",
+        "glossary_crash_point": "Điểm Nổ",
+        "glossary_message_reach_max_win": "Đạt Mức Tiền Thắng Tối Đa",
+        "title_multiplier": "Hệ Số Nhân"
     },
     "Spaceflight": {
         "auto_cashout": "TỰ ĐỘNG RÚT TIỀN",

@@ -283,7 +283,12 @@ export const languages = {
         "wins": "配当",
         "waggred": "Waggred",
         "losses": "損失",
-        "all_bets": "全ベット"
+        "all_bets": "全ベット",
+        "crash_glossary_refund": "払い戻し",
+        "glossary_bet": "ベット",
+        "glossary_crash_point": "クラッシュポイント",
+        "glossary_message_reach_max_win": "最大配当を獲得せよ",
+        "title_multiplier": "マルチプライヤー"
     },
     "Spaceflight": {
         "auto_cashout": "オートキャッシュアウト",

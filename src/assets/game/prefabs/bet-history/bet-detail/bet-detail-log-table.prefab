@@ -671,7 +671,7 @@
     "__prefab": {
       "__id__": 25
     },
-    "key": "Spaceflight.multiplier",
+    "key": "Common.title_multiplier",
     "format": 3,
     "prefix": "",
     "suffix": "",
@@ -901,7 +901,7 @@
     "__prefab": {
       "__id__": 37
     },
-    "key": "Spaceflight.glossary_bet",
+    "key": "Common.glossary_bet",
     "format": 3,
     "prefix": "",
     "suffix": "",
@@ -3484,7 +3484,7 @@
     "__prefab": {
       "__id__": 165
     },
-    "key": "Spaceflight.you_reach_max_win",
+    "key": "Common.you_reach_max_win",
     "format": 3,
     "prefix": "(",
     "suffix": ")",

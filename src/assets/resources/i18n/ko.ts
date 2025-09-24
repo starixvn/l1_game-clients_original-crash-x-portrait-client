@@ -283,7 +283,12 @@ export const languages = {
         "wins": "승리",
         "waggred": "Waggred",
         "losses": "손실",
-        "all_bets": "모든 베팅"
+        "all_bets": "모든 베팅",
+        "crash_glossary_refund": "환불",
+        "glossary_bet": "베팅",
+        "glossary_crash_point": "크래시 포인트",
+        "glossary_message_reach_max_win": "최대 당첨금 도달",
+        "title_multiplier": "배수"
     },
     "Spaceflight": {
         "game_name": "스페이스플라이트",

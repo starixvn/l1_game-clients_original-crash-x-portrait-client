@@ -283,7 +283,12 @@ export const languages = {
         "wins": "Panalo.",
         "waggred": "Waggred",
         "losses": "Mga Pagkalugi",
-        "all_bets": "Lahat ng Taya\n\n\n"
+        "all_bets": "Lahat ng Taya\n\n\n",
+        "crash_glossary_refund": "Bumalik",
+        "glossary_bet": "Taya",
+        "glossary_crash_point": "Crash Point",
+        "glossary_message_reach_max_win": "Abutin ang Max Win",
+        "title_multiplier": "Multiplier"
     },
     "Spaceflight": {
         "game_name": "Spaceflight",

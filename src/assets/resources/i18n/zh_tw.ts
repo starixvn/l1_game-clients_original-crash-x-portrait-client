@@ -283,7 +283,12 @@ export const languages = {
         "wins": "赢",
         "waggred": "Waggred",
         "losses": "損失",
-        "all_bets": "全部投注"
+        "all_bets": "全部投注",
+        "crash_glossary_refund": "退款",
+        "glossary_bet": "賭注",
+        "glossary_crash_point": "崩潰點",
+        "glossary_message_reach_max_win": "達到最大勝利",
+        "title_multiplier": "乘數"
     },
     "Spaceflight": {
         "auto_cashout": "自動兌現",
