@@ -28,9 +28,6 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 16
-      },
-      {
         "__id__": 18
       },
       {
@@ -47,15 +44,18 @@
       },
       {
         "__id__": 28
+      },
+      {
+        "__id__": 30
       }
     ],
     "_prefab": {
-      "__id__": 30
+      "__id__": 32
     },
     "_lpos": {
       "__type__": "cc.Vec3",
       "x": 0,
-      "y": 852,
+      "y": 672,
       "z": 0
     },
     "_lrot": {
@@ -236,10 +236,13 @@
       },
       {
         "__id__": 13
+      },
+      {
+        "__id__": 15
       }
     ],
     "_prefab": {
-      "__id__": 15
+      "__id__": 17
     },
     "_lpos": {
       "__type__": "cc.Vec3",
@@ -388,6 +391,26 @@
     "fileId": "f3UP+pJcNAOab2yUD7MBTr"
   },
   {
+    "__type__": "c8204U0ODdLmIOdPZvO3qXA",
+    "_name": "",
+    "_objFlags": 0,
+    "__editorExtras__": {},
+    "node": {
+      "__id__": 8
+    },
+    "_enabled": true,
+    "__prefab": {
+      "__id__": 16
+    },
+    "overrideFonts": [],
+    "enableCacheMode": false,
+    "_id": ""
+  },
+  {
+    "__type__": "cc.CompPrefabInfo",
+    "fileId": "a1AW21jh5JUqGXwGRTV+bD"
+  },
+  {
     "__type__": "cc.PrefabInfo",
     "root": {
       "__id__": 1
@@ -410,7 +433,7 @@
     },
     "_enabled": true,
     "__prefab": {
-      "__id__": 17
+      "__id__": 19
     },
     "_contentSize": {
       "__type__": "cc.Size",
@@ -438,7 +461,7 @@
     },
     "_enabled": true,
     "__prefab": {
-      "__id__": 19
+      "__id__": 21
     },
     "lblMessage": {
       "__id__": 11
@@ -459,7 +482,7 @@
     },
     "_enabled": true,
     "__prefab": {
-      "__id__": 21
+      "__id__": 23
     },
     "_opacity": 255,
     "_id": ""
@@ -478,7 +501,7 @@
     },
     "_enabled": true,
     "__prefab": {
-      "__id__": 23
+      "__id__": 25
     },
     "_alignFlags": 1,
     "_target": null,
@@ -514,7 +537,7 @@
     },
     "_enabled": true,
     "__prefab": {
-      "__id__": 25
+      "__id__": 27
     },
     "_customMaterial": null,
     "_srcBlendFactor": 2,
@@ -562,7 +585,7 @@
     },
     "_enabled": true,
     "__prefab": {
-      "__id__": 27
+      "__id__": 29
     },
     "_id": ""
   },
@@ -580,7 +603,7 @@
     },
     "_enabled": false,
     "__prefab": {
-      "__id__": 29
+      "__id__": 31
     },
     "_resizeMode": 1,
     "_layoutType": 2,
