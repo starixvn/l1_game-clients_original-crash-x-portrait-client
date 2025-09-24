@@ -42,7 +42,7 @@ async function getMapping(configPath) {
 
 (async function () {
     const remoteInfo = await getMapping(`localization/info.json?v=${Date.now().toString()}`);
-    globalThis.localeMapping = { "es-ES": "es", "tr-TR": "tr", "fil-PH": "fil_ph", "ko-KR": "ko", "hi-IN": "hi_in", "bn-BD": "bn_bd","pt-BR": "pt_br"};
+    globalThis.localeMapping = { "es-ES": "es", "tr-TR": "tr", "fil-PH": "fil_ph", "ko-KR": "ko", "hi-IN": "hi_in", "bn-BD": "bn_bd","pt-BR": "pt_br", "ms-MY": "ms_my"};
     globalThis.fontMapping = await getMapping(
         `localization/configs/font-mapping.json?v=${remoteInfo?.versionFontMapping ?? Date.now().toString()}`
     );
