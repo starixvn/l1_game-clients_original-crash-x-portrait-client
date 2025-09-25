@@ -463,7 +463,7 @@ export const languages = {
         "player_win": "プレイヤー勝利！",
         "choice_banker": "バンカー",
         "choice_player": "プレイヤー",
-        "result_player_banker": "結果\\n（プレイヤー | バンカー）",
+        "result_player_banker": "結果\n（プレイヤー | バンカー）",
         "type_bet_number": "特定の数字",
         "total_score": "合計ポイント",
         "lose_any_triple": "ゾロ目が出ると負け",

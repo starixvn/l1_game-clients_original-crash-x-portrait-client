@@ -637,7 +637,7 @@ export const languages = {
         "table": "Table",
         "joinGame": "Sumali sa laro",
         "promotion": "Mga Promotions",
-        "terms": "Mga Tuntunin at\\n Kundisyon",
+        "terms": "Mga Tuntunin at\n Kundisyon",
         "totalBet": "Kabuuang Taya",
         "totalWin": "Total Win",
         "free_spin_left_amount": "Natitirang Free Spins: %{amount}",

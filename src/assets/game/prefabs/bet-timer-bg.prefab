@@ -230,7 +230,7 @@
     "_overflow": 0,
     "_enableWrapText": false,
     "_font": {
-      "__uuid__": "234a1ff4-365c-4619-9288-220c0268bb31",
+      "__uuid__": "e3d36477-6fd0-4ee4-b4cc-ed05fa79994a",
       "__expectedType__": "cc.TTFFont"
     },
     "_isSystemFontUsed": false,
@@ -704,7 +704,7 @@
     "fileId": "4a5R2gpC1H6q6RcZvNc1Kc"
   },
   {
-    "__type__": "60cf5z6o6RE2orV51eQndRR",
+    "__type__": "87117DdNEJIzrq40asCsx6u",
     "_name": "",
     "_objFlags": 0,
     "__editorExtras__": {},
@@ -725,7 +725,7 @@
   },
   {
     "__type__": "cc.CompPrefabInfo",
-    "fileId": "b7yEQ6eOZPzYeZ0bK6K53f"
+    "fileId": "5b1oxx5adLNJa6qUPMpCnW"
   },
   {
     "__type__": "cc.PrefabInfo",
@@ -736,6 +736,7 @@
       "__id__": 0
     },
     "fileId": "e5NfEEVI5LIK7lLEjw33XT",
+    "instance": null,
     "targetOverrides": []
   }
 ]

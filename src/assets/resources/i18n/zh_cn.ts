@@ -568,7 +568,7 @@ export const languages = {
         "please_select_name": "请在游戏中选择您的昵称。",
         "enter_your_name": "输入你的昵称。",
         "submit": "提交",
-        "nick_require": "注意：\\n + 昵称的长度必须在 3 到 14 个字符之间。\\n + 不能包含空格、特殊字符和非英文字符。\\n + 提交后不能更改昵称。",
+        "nick_require": "注意：\n + 昵称的长度必须在 3 到 14 个字符之间。\n + 不能包含空格、特殊字符和非英文字符。\n + 提交后不能更改昵称。",
         "name_invalid": "输入的昵称无效，请重试。",
         "category_all": "所有游戏",
         "category_sedie": "色碟",
