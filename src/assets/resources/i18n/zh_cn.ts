@@ -246,7 +246,7 @@ export const languages = {
         "waiting_for_the_next_round": "等待下一轮",
         "show_more": "显示更多",
         "show_less": "显示更少",
-        "start_in": "开始于 {time}s",
+        "start_in": "投注时间：{time}秒",
         "cancel_bet": "取消投注",
         "cashed": "兑现",
         "cashout": "兑现",
@@ -288,7 +288,9 @@ export const languages = {
         "glossary_bet": "赌注",
         "glossary_crash_point": "崩溃点",
         "glossary_message_reach_max_win": "达到最大胜利",
-        "title_multiplier": "乘数"
+        "title_multiplier": "乘数",
+        "crash_start_in": "开始于 %{time}",
+        "crashed": "坠毁"
     },
     "Spaceflight": {
         "auto_cashout": "自动兑现",

@@ -288,7 +288,9 @@ export const languages = {
         "glossary_bet": "ベット",
         "glossary_crash_point": "クラッシュポイント",
         "glossary_message_reach_max_win": "最大配当を獲得せよ",
-        "title_multiplier": "マルチプライヤー"
+        "title_multiplier": "マルチプライヤー",
+        "crash_start_in": "開始まで",
+        "crashed": "クラッシュ"
     },
     "Spaceflight": {
         "auto_cashout": "オートキャッシュアウト",

@@ -246,7 +246,7 @@ export const languages = {
         "waiting_for_the_next_round": "परिणाम दिखाया जा रहा है",
         "show_more": "और दिखाओ",
         "show_less": "कम दिखाओ",
-        "start_in": "में शुरू {time}s",
+        "start_in": "शर्त लगाने का समय: {time}s",
         "cancel_bet": "(शर्त रद्द करें)",
         "cashed": "निकासी",
         "cashout": "कैशआउट",
@@ -288,7 +288,9 @@ export const languages = {
         "glossary_bet": "शर्त",
         "glossary_crash_point": "क्रैश पॉइंट",
         "glossary_message_reach_max_win": "अधिकतम जीत तक पहुँचें",
-        "title_multiplier": "गुणक "
+        "title_multiplier": "गुणक ",
+        "crash_start_in": "में शुरू %{time}",
+        "crashed": "क्रैश हो गया"
     },
     "Spaceflight": {
         "game_name": "अंतरिक्ष उड़ान",

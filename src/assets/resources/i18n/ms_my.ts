@@ -567,7 +567,7 @@ export const languages = {
         "lock_bet": "Menunggu keputusan",
         "tooltip_stat": "Lihat stat",
         "tooltip_auto": " অটো",
-        "crash_next_round": "(Pusingan Seterusnya)",
+        "crash_next_round": "(Pusingan\nSeterusnya)",
         "start_auto_bet": "Mula Pertaruhan Auto",
         "number_of_bet": "Bilangan Pertaruhan",
         "on_win": "Apabila Menang",
@@ -588,7 +588,9 @@ export const languages = {
         "glossary_bet": "Taruhan",
         "glossary_crash_point": "Titik jatuh",
         "glossary_message_reach_max_win": "Capai Max Win",
-        "title_multiplier": "Pengganda "
+        "title_multiplier": "Pengganda ",
+        "crash_start_in": "Mula dalam %{time}",
+        "crashed": "RUNTUH"
     },
     "Spaceflight": {
         "game_name": "Penerbangan Angkasa",

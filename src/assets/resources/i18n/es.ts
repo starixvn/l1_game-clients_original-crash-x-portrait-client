@@ -246,7 +246,7 @@ export const languages = {
         "waiting_for_the_next_round": "Esperando la siguiente ronda",
         "show_more": "Mostrar más",
         "show_less": "Mostrar menos",
-        "start_in": "Comienza en {time}s",
+        "start_in": "Tiempo de apuesta: {time}s",
         "cancel_bet": "(Cancelar Apuesta)",
         "cashed": "Retirado",
         "cashout": "Retirar",
@@ -288,7 +288,9 @@ export const languages = {
         "glossary_bet": "Apuesta",
         "glossary_crash_point": "Punto de colisión",
         "glossary_message_reach_max_win": "Alcanzar la Ganancia Máxima",
-        "title_multiplier": "Multiplicador"
+        "title_multiplier": "Multiplicador",
+        "crash_start_in": "Comienza en ",
+        "crashed": "SE ESTRELLÓ"
     },
     "Spaceflight": {
         "auto_cashout": "Auto Retiro",

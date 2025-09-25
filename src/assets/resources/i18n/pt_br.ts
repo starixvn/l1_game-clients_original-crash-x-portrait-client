@@ -288,7 +288,9 @@ export const languages = {
         "glossary_bet": "Aposta",
         "glossary_crash_point": "Ponto de Crash",
         "glossary_message_reach_max_win": "Atingir o Ganho Máximo",
-        "title_multiplier": "Multiplicador"
+        "title_multiplier": "Multiplicador",
+        "crash_start_in": "Começa em %{time}",
+        "crashed": "CAIU"
     },
     "Spaceflight": {
         "game_name": "Voo Espacial",

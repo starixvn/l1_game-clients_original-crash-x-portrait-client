@@ -246,7 +246,7 @@ export const languages = {
         "waiting_for_the_next_round": "ফলাফল দেখানো হচ্ছে",
         "show_more": "আরো দেখান",
         "show_less": "কম দেখান",
-        "start_in": "শুরু হবে {time}s",
+        "start_in": "বাজির সময়: {time}s",
         "cancel_bet": "(বাজি বাতিল করুন)",
         "cashed": "ক্যাশ করা হয়েছে",
         "cashout": "Cashout",
@@ -288,7 +288,9 @@ export const languages = {
         "glossary_bet": "বাজি",
         "glossary_crash_point": "ক্র্যাশ পয়েন্ট",
         "glossary_message_reach_max_win": "সর্বোচ্চ জয় অর্জন করুন",
-        "title_multiplier": "গুণক"
+        "title_multiplier": "গুণক",
+        "crash_start_in": "শুরু হবে %{time}",
+        "crashed": "বিধ্বস্ত"
     },
     "Spaceflight": {
         "game_name": "স্পেসফ্লাইট",

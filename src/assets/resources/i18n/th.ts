@@ -246,7 +246,7 @@ export const languages = {
         "waiting_for_the_next_round": "กำลังรอรอบถัดไป",
         "show_more": "แสดงเพิ่มเติม",
         "show_less": "แสดงน้อยลง",
-        "start_in": "เริ่มเข้า {time}s",
+        "start_in": "เวลาเดิมพัน: {time}s",
         "cancel_bet": "(ยกเลิกเดิมพัน)",
         "cashed": "เงินสด",
         "cashout": "ถอนเงิน",
@@ -288,7 +288,9 @@ export const languages = {
         "glossary_bet": "เดิมพัน",
         "glossary_crash_point": "แต้มการพังของจรวด",
         "glossary_message_reach_max_win": "ไปให้ถึงการชนะสูงสุด",
-        "title_multiplier": "ตัวคูณ"
+        "title_multiplier": "ตัวคูณ",
+        "crash_start_in": "เริ่มเข้า %{time}",
+        "crashed": "ล้มเหลว"
     },
     "Spaceflight": {
         "auto_cashout": "ถอนเงินอัตโนมัติ",

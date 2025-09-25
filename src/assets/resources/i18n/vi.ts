@@ -288,7 +288,9 @@ export const languages = {
         "glossary_bet": "Cược",
         "glossary_crash_point": "Điểm Nổ",
         "glossary_message_reach_max_win": "Đạt Mức Tiền Thắng Tối Đa",
-        "title_multiplier": "Hệ Số Nhân"
+        "title_multiplier": "Hệ Số Nhân",
+        "crash_start_in": "Bắt đầu sau %{time}",
+        "crashed": "ĐÃ NỔ"
     },
     "Spaceflight": {
         "auto_cashout": "TỰ ĐỘNG RÚT TIỀN",

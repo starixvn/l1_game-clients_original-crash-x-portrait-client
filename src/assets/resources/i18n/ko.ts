@@ -288,7 +288,9 @@ export const languages = {
         "glossary_bet": "베팅",
         "glossary_crash_point": "크래시 포인트",
         "glossary_message_reach_max_win": "최대 당첨금 도달",
-        "title_multiplier": "배수"
+        "title_multiplier": "배수",
+        "crash_start_in": "시작까지 %{time}",
+        "crashed": "크래시"
     },
     "Spaceflight": {
         "game_name": "스페이스플라이트",

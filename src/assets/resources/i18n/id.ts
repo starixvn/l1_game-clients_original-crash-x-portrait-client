@@ -246,7 +246,7 @@ export const languages = {
         "waiting_for_the_next_round": "Menunggu putaran berikutnya",
         "show_more": "Tampilkan Lebih Banyak",
         "show_less": "Tampilkan Lebih Sedikit",
-        "start_in": "Mulai masuk {time}s",
+        "start_in": "Waktu taruhan: {time}s",
         "cancel_bet": "(Batalkan Taruhan)",
         "cashed": "Dicairkan",
         "cashout": "Cashout",
@@ -267,7 +267,7 @@ export const languages = {
         "lock_bet": "Tunggu hasil",
         "tooltip_stat": "Lihat statistik",
         "tooltip_auto": "Otomatis",
-        "crash_next_round": "(Ronde Selanjutnya)",
+        "crash_next_round": "(Ronde\nSelanjutnya)",
         "start_auto_bet": "Mulai Taruhan Otomatis",
         "number_of_bet": "Jumlah Taruhan",
         "on_win": "Saat Menang",
@@ -288,7 +288,9 @@ export const languages = {
         "glossary_bet": "Taruhan",
         "glossary_crash_point": "Titik jatuh",
         "glossary_message_reach_max_win": "Raih Kemenangan Maksimal",
-        "title_multiplier": "Pengali"
+        "title_multiplier": "Pengali",
+        "crash_start_in": "Mulai masuk %{time}",
+        "crashed": "TERJATUH"
     },
     "Spaceflight": {
         "auto_cashout": "CASHOUT OTOMATIS",
@@ -595,7 +597,7 @@ export const languages = {
         "choice_rooster_break": "AYAM\\nJANTAN",
         "auto_spin_break": "Auto\\nPutar",
         "betChoice_break": "Pilihan\\nTaruhan",
-        "place_bet_break": "Pasang\\nTaruhan",
+        "place_bet_break": "Pasang\nTaruhan",
         "turbo_break": "Turbo",
         "betType_break": "Jenis\\nTaruhan",
         "totalStake_break": "Total\\nTaruhan",

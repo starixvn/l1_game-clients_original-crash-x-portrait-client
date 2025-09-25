@@ -246,7 +246,7 @@ export const languages = {
         "waiting_for_the_next_round": "Naghihintay para sa susunod na round",
         "show_more": "Ipakita pa",
         "show_less": "Ipakita ang kaunti",
-        "start_in": "Magsisimula sa {time}s",
+        "start_in": "Oras ng pagtaya: {time}s",
         "cancel_bet": "(Alisin ang Taya)",
         "cashed": "NAKUHA",
         "cashout": "Cashout",
@@ -288,7 +288,9 @@ export const languages = {
         "glossary_bet": "Taya",
         "glossary_crash_point": "Crash Point",
         "glossary_message_reach_max_win": "Abutin ang Max Win",
-        "title_multiplier": "Multiplier"
+        "title_multiplier": "Multiplier",
+        "crash_start_in": "Magsisimula Sa",
+        "crashed": "NATAPOS"
     },
     "Spaceflight": {
         "game_name": "Spaceflight",

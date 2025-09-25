@@ -288,7 +288,9 @@ export const languages = {
         "glossary_bet": "Bahis",
         "glossary_crash_point": "Çöküş Noktası",
         "glossary_message_reach_max_win": "Maksimum Kazanca Ulaşın",
-        "title_multiplier": "Çarpan"
+        "title_multiplier": "Çarpan",
+        "crash_start_in": "Başlayacak",
+        "crashed": "ÇÖKTÜ"
     },
     "Spaceflight": {
         "game_name": "Uzay Uçuşu",
