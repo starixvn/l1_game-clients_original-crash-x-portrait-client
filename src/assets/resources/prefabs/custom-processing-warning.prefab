@@ -237,7 +237,7 @@
     },
     "_lpos": {
       "__type__": "cc.Vec3",
-      "x": 0,
+      "x": -20.16,
       "y": 0,
       "z": 0
     },
@@ -278,8 +278,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 460,
-      "height": 30
+      "width": 575.3330000000001,
+      "height": 37.8
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -314,7 +314,7 @@
       "b": 255,
       "a": 255
     },
-    "_string": "messages.betProcessing",
+    "_string": "",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
     "_actualFontSize": 28,
@@ -324,7 +324,7 @@
     "_overflow": 3,
     "_enableWrapText": true,
     "_font": {
-      "__uuid__": "e3d36477-6fd0-4ee4-b4cc-ed05fa79994a",
+      "__uuid__": "cbf6b70e-8a23-4b37-b5a7-aa9a65c55384",
       "__expectedType__": "cc.TTFFont"
     },
     "_isSystemFontUsed": false,
@@ -333,7 +333,7 @@
     "_isBold": false,
     "_isUnderline": false,
     "_underlineHeight": 2,
-    "_cacheMode": 2,
+    "_cacheMode": 0,
     "_enableOutline": false,
     "_outlineColor": {
       "__type__": "cc.Color",
