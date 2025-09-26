@@ -113,6 +113,10 @@ export class CrashBetHandler extends gc.GameCrash.CrashBet.CrashBetHandler {
         }
     }
 
+    turnOffAutoBet() {
+        this.betControlStore.turnOffAutoBet();
+    }
+
     onTurnOnAutoBet(betKey: number) {
         if (!this.validateBetWithBalance(betKey)) {
             this.betControlStore.setAutoBet(betKey, false);

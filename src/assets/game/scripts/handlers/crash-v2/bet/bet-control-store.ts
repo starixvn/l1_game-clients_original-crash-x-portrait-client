@@ -216,6 +216,16 @@ export class BetControlStore {
         this.onSaveStorage();
     }
 
+    turnOffAutoBet() {
+        let turnOffBetKey = 0;
+        const betKey0Value = this.controls[0].setting.amount;
+        const betKey1Value = this.controls[1].setting.amount;
+        if (betKey0Value > betKey1Value) {
+            turnOffBetKey = 1;
+        }
+        this.toggleAutoBet(turnOffBetKey);
+    }
+
     toggleAutoCashOut(betKey: number) {
         this.controls[betKey].setting = {
             ...this.controls[betKey].setting,
@@ -259,8 +269,6 @@ export class BetControlStore {
         };
         this.onSaveStorage();
     }
-
-
 
     getBetSetting(betKey: number) {
         return this.controls[betKey].setting;
