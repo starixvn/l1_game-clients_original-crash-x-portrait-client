@@ -8982,18 +8982,6 @@
     "_id": "c5V1EV8IpMtrIvY1OE9t2u"
   },
   {
-    "__type__": "e60bchtFAxPHZ5Hue8Azebd",
-    "_name": "",
-    "_objFlags": 0,
-    "__editorExtras__": {},
-    "node": {
-      "__id__": 2
-    },
-    "_enabled": true,
-    "__prefab": null,
-    "_id": "9977YIpz1M8KVDS0TatgQ2"
-  },
-  {
     "__type__": "45095HC9rNPjYcv582jRrBd",
     "_name": "",
     "_objFlags": 0,
@@ -9021,6 +9009,18 @@
     "_enabled": true,
     "__prefab": null,
     "_id": "fe3TP4VtlD67rYCrFKV8di"
+  },
+  {
+    "__type__": "5fb4fOMa31PjqDs4d1zk9va",
+    "_name": "",
+    "_objFlags": 0,
+    "__editorExtras__": {},
+    "node": {
+      "__id__": 2
+    },
+    "_enabled": true,
+    "__prefab": null,
+    "_id": "7bwOAulOtJmacIexneNc1+"
   },
   {
     "__type__": "cc.PrefabInfo",
@@ -9129,7 +9129,7 @@
   {
     "__type__": "cc.TargetOverrideInfo",
     "source": {
-      "__id__": 493
+      "__id__": 492
     },
     "sourceInfo": null,
     "propertyPath": [
@@ -9149,7 +9149,7 @@
   {
     "__type__": "cc.TargetOverrideInfo",
     "source": {
-      "__id__": 493
+      "__id__": 492
     },
     "sourceInfo": null,
     "propertyPath": [
@@ -9171,7 +9171,7 @@
   {
     "__type__": "cc.TargetOverrideInfo",
     "source": {
-      "__id__": 493
+      "__id__": 492
     },
     "sourceInfo": null,
     "propertyPath": [
@@ -9193,7 +9193,7 @@
   {
     "__type__": "cc.TargetOverrideInfo",
     "source": {
-      "__id__": 493
+      "__id__": 492
     },
     "sourceInfo": null,
     "propertyPath": [
@@ -9214,7 +9214,7 @@
   {
     "__type__": "cc.TargetOverrideInfo",
     "source": {
-      "__id__": 493
+      "__id__": 492
     },
     "sourceInfo": null,
     "propertyPath": [
@@ -9235,7 +9235,7 @@
   {
     "__type__": "cc.TargetOverrideInfo",
     "source": {
-      "__id__": 493
+      "__id__": 492
     },
     "sourceInfo": null,
     "propertyPath": [
@@ -9256,7 +9256,7 @@
   {
     "__type__": "cc.TargetOverrideInfo",
     "source": {
-      "__id__": 493
+      "__id__": 492
     },
     "sourceInfo": null,
     "propertyPath": [
