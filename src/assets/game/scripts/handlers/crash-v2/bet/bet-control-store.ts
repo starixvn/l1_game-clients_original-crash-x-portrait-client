@@ -221,11 +221,10 @@ export class BetControlStore {
             return;
         }
 
-        let turnOffBetKey = 0;
-        const betKey0Value = this.controls[0].setting.amount;
-        const betKey1Value = this.controls[1].setting.amount;
-        if (betKey0Value >= betKey1Value) {
-            turnOffBetKey = 1;
+        let turnOffBetKey = 1;
+        const bet1Control = this.controls[1];
+        if (bet1Control?.betAccepted) {
+            turnOffBetKey = 0;
         }
         if (this.controls[turnOffBetKey].setting.autoBet) {
             this.toggleAutoBet(turnOffBetKey);
