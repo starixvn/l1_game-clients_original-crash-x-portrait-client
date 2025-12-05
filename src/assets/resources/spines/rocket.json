@@ -1,6 +1,6 @@
 {
 "skeleton": {
-	"hash": "jgK0RiNBfThtxofwegWHxKcoAp8",
+	"hash": "YaLkdJh4oEJ2XUzCeJ4cqWKENlQ",
 	"spine": "3.8.99",
 	"x": -112.5,
 	"y": -74.07,
@@ -397,6 +397,11 @@
 					{ "time": 0.6, "name": "boom/New folder/boom_00017" },
 					{ "time": 0.6333, "name": "boom/New folder/boom_00018" },
 					{ "time": 0.6667, "name": null }
+				]
+			},
+			"logo": {
+				"color": [
+					{ "color": "ffffff00" }
 				]
 			},
 			"ship": {
