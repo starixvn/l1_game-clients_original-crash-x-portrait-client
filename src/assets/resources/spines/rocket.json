@@ -1,13 +1,13 @@
 {
 "skeleton": {
-	"hash": "pkGsJXN2Me2cZOTj3nk5IZV60RQ",
+	"hash": "jgK0RiNBfThtxofwegWHxKcoAp8",
 	"spine": "3.8.99",
-	"x": -135,
-	"y": -76.05,
-	"width": 270,
-	"height": 159.16,
-	"images": "",
-	"audio": "D:/MYWORKFOLDER/design/telegram/rocket-anim"
+	"x": -112.5,
+	"y": -74.07,
+	"width": 225,
+	"height": 157.17,
+	"images": "./images/",
+	"audio": ""
 },
 "bones": [
 	{ "name": "root" },
@@ -21,7 +21,8 @@
 	{ "name": "boom", "parent": "explode" },
 	{ "name": "boom-do", "parent": "explode", "rotation": 90, "scaleX": 0.8, "scaleY": 0.8 },
 	{ "name": "boom-do-nen", "parent": "explode", "rotation": 180, "scaleX": 1.1, "scaleY": 1.1 },
-	{ "name": "smoke", "parent": "root", "y": -17.82, "scaleX": 1.5, "scaleY": 1.5 }
+	{ "name": "smoke", "parent": "root", "y": -17.82, "scaleX": 1.5, "scaleY": 1.5 },
+	{ "name": "logo", "parent": "ship", "x": 0.03, "y": -10.5 }
 ],
 "slots": [
 	{ "name": "test", "bone": "root" },
@@ -29,11 +30,12 @@
 	{ "name": "ship", "bone": "ship", "attachment": "ship" },
 	{ "name": "Comp 1/tail_00000", "bone": "tail", "color": "fce4aeff", "blend": "additive" },
 	{ "name": "Comp 1/tail-center", "bone": "tail-center", "color": "ffe30cc7" },
-	{ "name": "VGFXEE 04/vfx_00233", "bone": "vfx", "attachment": "VGFXEE 04/vfx_00268", "blend": "additive" },
+	{ "name": "VGFXEE 04/vfx_00233", "bone": "vfx", "blend": "additive" },
 	{ "name": "boom-nen", "bone": "boom-do-nen", "color": "ff140064" },
 	{ "name": "boom", "bone": "boom" },
 	{ "name": "boom-do", "bone": "boom-do", "color": "ff0b00ff", "blend": "additive" },
-	{ "name": "smoke/smoke00", "bone": "smoke", "color": "ffffff95", "attachment": "smoke/smoke20" }
+	{ "name": "smoke/smoke00", "bone": "smoke", "color": "ffffff95", "attachment": "smoke/smoke20" },
+	{ "name": "logo", "bone": "logo" }
 ],
 "skins": [
 	{
@@ -126,7 +128,6 @@
 				"Comp 1/tail_00040": { "y": 0.5, "width": 200, "height": 130 }
 			},
 			"VGFXEE 04/vfx_00233": {
-				"VGFXEE 04/vfx_00233": { "width": 300, "height": 169 },
 				"VGFXEE 04/vfx_00234": { "width": 300, "height": 169 },
 				"VGFXEE 04/vfx_00235": { "width": 300, "height": 169 },
 				"VGFXEE 04/vfx_00236": { "width": 300, "height": 169 },
@@ -160,11 +161,9 @@
 				"VGFXEE 04/vfx_00264": { "width": 300, "height": 169 },
 				"VGFXEE 04/vfx_00265": { "width": 300, "height": 169 },
 				"VGFXEE 04/vfx_00266": { "width": 300, "height": 169 },
-				"VGFXEE 04/vfx_00267": { "width": 300, "height": 169 },
-				"VGFXEE 04/vfx_00268": { "width": 300, "height": 169 }
+				"VGFXEE 04/vfx_00267": { "width": 300, "height": 169 }
 			},
 			"boom": {
-				"boom/New folder/boom_00001": { "width": 100, "height": 100 },
 				"boom/New folder/boom_00002": { "width": 100, "height": 100 },
 				"boom/New folder/boom_00003": { "width": 100, "height": 100 },
 				"boom/New folder/boom_00004": { "width": 100, "height": 100 },
@@ -184,7 +183,6 @@
 				"boom/New folder/boom_00018": { "width": 100, "height": 100 }
 			},
 			"boom-do": {
-				"boom/New folder/boom_00001": { "width": 100, "height": 100 },
 				"boom/New folder/boom_00002": { "width": 100, "height": 100 },
 				"boom/New folder/boom_00003": { "width": 100, "height": 100 },
 				"boom/New folder/boom_00004": { "width": 100, "height": 100 },
@@ -204,7 +202,6 @@
 				"boom/New folder/boom_00018": { "width": 100, "height": 100 }
 			},
 			"boom-nen": {
-				"boom/New folder/boom_00001": { "width": 100, "height": 100 },
 				"boom/New folder/boom_00002": { "width": 100, "height": 100 },
 				"boom/New folder/boom_00003": { "width": 100, "height": 100 },
 				"boom/New folder/boom_00004": { "width": 100, "height": 100 },
@@ -300,7 +297,6 @@
 		"slots": {
 			"VGFXEE 04/vfx_00233": {
 				"attachment": [
-					{ "name": "VGFXEE 04/vfx_00233" },
 					{ "time": 0.0333, "name": "VGFXEE 04/vfx_00234" },
 					{ "time": 0.0667, "name": "VGFXEE 04/vfx_00235" },
 					{ "time": 0.1, "name": "VGFXEE 04/vfx_00236" },
@@ -334,13 +330,11 @@
 					{ "time": 1.0333, "name": "VGFXEE 04/vfx_00264" },
 					{ "time": 1.0667, "name": "VGFXEE 04/vfx_00265" },
 					{ "time": 1.1, "name": "VGFXEE 04/vfx_00266" },
-					{ "time": 1.1333, "name": "VGFXEE 04/vfx_00267" },
-					{ "time": 1.1667, "name": "VGFXEE 04/vfx_00268" }
+					{ "time": 1.1333, "name": "VGFXEE 04/vfx_00267" }
 				]
 			},
 			"boom": {
 				"attachment": [
-					{ "name": "boom/New folder/boom_00001" },
 					{ "time": 0.0333, "name": "boom/New folder/boom_00002" },
 					{ "time": 0.0667, "name": "boom/New folder/boom_00003" },
 					{ "time": 0.1, "name": "boom/New folder/boom_00004" },
@@ -363,7 +357,6 @@
 			},
 			"boom-do": {
 				"attachment": [
-					{ "name": "boom/New folder/boom_00001" },
 					{ "time": 0.0333, "name": "boom/New folder/boom_00002" },
 					{ "time": 0.0667, "name": "boom/New folder/boom_00003" },
 					{ "time": 0.1, "name": "boom/New folder/boom_00004" },
@@ -386,7 +379,6 @@
 			},
 			"boom-nen": {
 				"attachment": [
-					{ "time": 0.0667, "name": "boom/New folder/boom_00001" },
 					{ "time": 0.1, "name": "boom/New folder/boom_00002" },
 					{ "time": 0.1333, "name": "boom/New folder/boom_00003" },
 					{ "time": 0.1667, "name": "boom/New folder/boom_00004" },

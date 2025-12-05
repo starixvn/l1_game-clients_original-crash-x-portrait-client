@@ -11,7 +11,7 @@
     "6c48a": {
       "importer": "texture",
       "uuid": "ac1fe60f-f3f6-4382-ae51-4b4bc4875fc0@6c48a",
-      "displayName": "Rocket",
+      "displayName": "rocket",
       "id": "6c48a",
       "name": "texture",
       "userData": {
@@ -35,7 +35,7 @@
     "f9941": {
       "importer": "sprite-frame",
       "uuid": "ac1fe60f-f3f6-4382-ae51-4b4bc4875fc0@f9941",
-      "displayName": "Rocket",
+      "displayName": "rocket",
       "id": "f9941",
       "name": "spriteFrame",
       "userData": {
